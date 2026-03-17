@@ -126,11 +126,14 @@
       "PER_PAGE_TEMPLATE": "{size} / page"
     },
     "SYNAPSEA_ANALYTICS": {
+ codex/transform-chatwoot-into-synapsea-connect-9ntkpr
+
  codex/transform-chatwoot-into-synapsea-connect-2i3fp8
 
  codex/transform-chatwoot-into-synapsea-connect-6xbxtt
 
  codex/transform-chatwoot-into-synapsea-connect-vkjace
+ develop
  develop
  develop
       "TITLE": "Synapsea executive dashboard",
@@ -199,6 +202,9 @@
       "ACTION_2": "Increase AI coverage in high-volume channels with low risk.",
       "ACTION_3": "Protect SLA windows in peak hours using proactive routing.",
       "CURRENCY_SYMBOL": "$",
+ codex/transform-chatwoot-into-synapsea-connect-9ntkpr
+      "TOP_PERFORMER_ITEM": "{label} - {value}"
+
       "TOP_PERFORMER_ITEM": "{label} - {value}",
       "DELTA_UP": "+{value}{suffix}",
       "DELTA_DOWN": "-{value}{suffix}"
@@ -213,6 +219,7 @@
       "LEAD_CONVERSIONS": "Lead conversions",
       "AGENT_PERFORMANCE": "Agent performance (top)",
       "CONTACT_ORIGIN": "Contact origin"
+ develop
  develop
  develop
  develop

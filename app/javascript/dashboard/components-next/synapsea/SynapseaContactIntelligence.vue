@@ -1,20 +1,29 @@
 <script setup>
+ codex/transform-chatwoot-into-synapsea-connect-9ntkpr
+
  codex/transform-chatwoot-into-synapsea-connect-zcodwn
 import ClientPanel from './conversation/ClientPanel.vue';
 
 defineProps({
 
+ develop
 import { computed } from 'vue';
 import { useI18n } from 'vue-i18n';
 
 const props = defineProps({
+ codex/transform-chatwoot-into-synapsea-connect-9ntkpr
+
+ develop
  develop
   contact: {
     type: Object,
     default: () => ({}),
   },
+ codex/transform-chatwoot-into-synapsea-connect-9ntkpr
+
  codex/transform-chatwoot-into-synapsea-connect-zcodwn
 
+ develop
   conversation: {
     type: Object,
     default: () => ({}),
@@ -101,11 +110,16 @@ const interactionHistory = computed(() => {
   }
 
   return t('CONTACT_PANEL.SYNAPSEA.CRM.NO_INTERACTION_HISTORY');
+ codex/transform-chatwoot-into-synapsea-connect-9ntkpr
+
+ develop
  develop
 });
 </script>
 
 <template>
+ codex/transform-chatwoot-into-synapsea-connect-9ntkpr
+
  codex/transform-chatwoot-into-synapsea-connect-zcodwn
   <ClientPanel :contact="contact" />
 
@@ -115,11 +129,14 @@ const interactionHistory = computed(() => {
  codex/transform-chatwoot-into-synapsea-connect-vkjace
  develop
  develop
+ develop
   <div class="grid gap-3">
     <section class="rounded-xl border border-n-weak bg-n-solid-2 p-3">
       <p
         class="mb-2 text-xs font-semibold uppercase tracking-wide text-n-slate-10"
       >
+ codex/transform-chatwoot-into-synapsea-connect-9ntkpr
+
  codex/transform-chatwoot-into-synapsea-connect-2i3fp8
 
  codex/transform-chatwoot-into-synapsea-connect-6xbxtt
@@ -128,6 +145,7 @@ const interactionHistory = computed(() => {
   <div class="grid gap-3 px-2 pb-3">
     <section class="rounded-xl border border-n-weak bg-n-solid-2 p-3">
       <p class="mb-2 text-xs font-medium uppercase tracking-wide text-n-brand">
+ develop
  develop
  develop
  develop
@@ -147,6 +165,9 @@ const interactionHistory = computed(() => {
           <dd class="m-0 text-sm text-n-slate-12">{{ suggestionText }}</dd>
         </div>
         <div class="grid grid-cols-2 gap-2">
+ codex/transform-chatwoot-into-synapsea-connect-9ntkpr
+          <div class="rounded-lg border border-n-weak bg-n-slate-2 p-2">
+
  codex/transform-chatwoot-into-synapsea-connect-2i3fp8
           <div class="rounded-lg border border-n-weak bg-n-slate-2 p-2">
 
@@ -157,6 +178,7 @@ const interactionHistory = computed(() => {
           <div class="rounded-lg border border-n-weak bg-n-slate-2 p-2">
 
           <div class="rounded-lg bg-n-alpha-2 p-2">
+ develop
  develop
  develop
  develop
@@ -172,6 +194,9 @@ const interactionHistory = computed(() => {
               }}
             </p>
           </div>
+ codex/transform-chatwoot-into-synapsea-connect-9ntkpr
+          <div class="rounded-lg border border-n-weak bg-n-slate-2 p-2">
+
  codex/transform-chatwoot-into-synapsea-connect-2i3fp8
           <div class="rounded-lg border border-n-weak bg-n-slate-2 p-2">
 
@@ -182,6 +207,7 @@ const interactionHistory = computed(() => {
           <div class="rounded-lg border border-n-weak bg-n-slate-2 p-2">
 
           <div class="rounded-lg bg-n-alpha-2 p-2">
+ develop
  develop
  develop
  develop
@@ -197,6 +223,11 @@ const interactionHistory = computed(() => {
     </section>
 
     <section class="rounded-xl border border-n-weak bg-n-solid-2 p-3">
+ codex/transform-chatwoot-into-synapsea-connect-9ntkpr
+      <p
+        class="mb-2 text-xs font-semibold uppercase tracking-wide text-n-slate-10"
+      >
+
  codex/transform-chatwoot-into-synapsea-connect-2i3fp8
       <p
         class="mb-2 text-xs font-semibold uppercase tracking-wide text-n-slate-10"
@@ -213,6 +244,7 @@ const interactionHistory = computed(() => {
       >
 
       <p class="mb-2 text-xs font-medium uppercase tracking-wide text-n-brand">
+ develop
  develop
  develop
  develop
@@ -250,6 +282,9 @@ const interactionHistory = computed(() => {
             <span
               v-for="tag in businessTags"
               :key="tag"
+ codex/transform-chatwoot-into-synapsea-connect-9ntkpr
+              class="inline-flex rounded-full bg-n-slate-3 px-2 py-0.5 text-xs text-n-slate-12"
+
  codex/transform-chatwoot-into-synapsea-connect-2i3fp8
               class="inline-flex rounded-full bg-n-slate-3 px-2 py-0.5 text-xs text-n-slate-12"
 
@@ -260,6 +295,7 @@ const interactionHistory = computed(() => {
               class="inline-flex rounded-full bg-n-slate-3 px-2 py-0.5 text-xs text-n-slate-12"
 
               class="inline-flex rounded-full bg-n-alpha-2 px-2 py-0.5 text-xs text-n-slate-12"
+ develop
  develop
  develop
  develop
@@ -277,5 +313,8 @@ const interactionHistory = computed(() => {
       </dl>
     </section>
   </div>
+ codex/transform-chatwoot-into-synapsea-connect-9ntkpr
+
+ develop
  develop
 </template>

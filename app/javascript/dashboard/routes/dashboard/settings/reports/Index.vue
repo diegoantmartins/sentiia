@@ -123,6 +123,9 @@ export default {
       show-group-by
       @filter-change="onFilterChange"
     />
+ codex/transform-chatwoot-into-synapsea-connect-9ntkpr
+    <SynapseaServiceAnalytics :from="from" :to="to" />
+
  codex/transform-chatwoot-into-synapsea-connect-2i3fp8
     <SynapseaServiceAnalytics :from="from" :to="to" />
 
@@ -133,6 +136,7 @@ export default {
     <SynapseaServiceAnalytics :from="from" :to="to" />
 
     <SynapseaServiceAnalytics />
+ develop
  develop
  develop
  develop
