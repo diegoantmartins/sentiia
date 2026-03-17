@@ -24,6 +24,7 @@ const intent = computed(
 const sentiment = computed(
   () => attrs.value.ai_sentiment || attrs.value.sentiment || '--'
 );
+ codex/transform-chatwoot-into-synapsea-connect-j4qiji
 const leadScore = computed(() => {
   const value = Number(
     attrs.value.lead_score ||
@@ -37,6 +38,16 @@ const leadScore = computed(() => {
 
   return Math.min(100, Math.max(0, value));
 });
+
+const leadScore = computed(
+  () =>
+    Number(
+      attrs.value.lead_score ||
+        props.contact?.additional_attributes?.lead_score ||
+        0
+    ) || 0
+);
+ develop
 </script>
 
 <template>
@@ -71,6 +82,7 @@ const leadScore = computed(() => {
         <p class="text-n-slate-10">
           {{ $t('CONVERSATION_SIDEBAR.INTELLIGENT_PANEL.LEAD_SCORE') }}
         </p>
+ codex/transform-chatwoot-into-synapsea-connect-j4qiji
         <p class="font-medium text-n-slate-12">
           {{
             $t('CONVERSATION_SIDEBAR.INTELLIGENT_PANEL.PERCENT_VALUE', {
@@ -78,6 +90,9 @@ const leadScore = computed(() => {
             })
           }}
         </p>
+
+        <p class="font-medium text-n-slate-12">{{ leadScore }}</p>
+ develop
       </div>
     </div>
   </SynCard>
