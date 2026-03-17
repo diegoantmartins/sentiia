@@ -2,6 +2,22 @@ export const HELP_CONTENT = {
   dashboard: {
     title: 'Como acompanhar o dashboard',
  codex/transform-chatwoot-into-synapsea-connect-7fgcn5
+ codex/transform-chatwoot-into-synapsea-connect-7fgcn5
+
+ codex/transform-chatwoot-into-synapsea-connect-9ntkpr
+
+ codex/transform-chatwoot-into-synapsea-connect-2i3fp8
+
+ codex/transform-chatwoot-into-synapsea-connect-6xbxtt
+
+ codex/transform-chatwoot-into-synapsea-connect-vkjace
+
+ codex/transform-chatwoot-into-synapsea-connect-ymy4px
+ develop
+ develop
+ develop
+ develop
+ develop
     body: 'Monitore volume, tempo de resposta e produtividade para identificar gargalos e priorizar ações operacionais.',
   },
   inbox: {
@@ -71,6 +87,17 @@ export const HELP_CONTENT = {
   captain: {
     title: 'Como usar o Captain',
     body: 'Organize base de conhecimento (FAQs, documentos e cenários) para melhorar respostas assistidas por IA.',
+ codex/transform-chatwoot-into-synapsea-connect-7fgcn5
+
+ codex/transform-chatwoot-into-synapsea-connect-9ntkpr
+
+ codex/transform-chatwoot-into-synapsea-connect-2i3fp8
+
+ codex/transform-chatwoot-into-synapsea-connect-6xbxtt
+
+ codex/transform-chatwoot-into-synapsea-connect-vkjace
+
+ develop
 
     body: 'Acompanhe volume de conversas, tempo de resposta e produtividade para identificar gargalos rapidamente.',
   },
@@ -122,16 +149,55 @@ export const HELP_CONTENT = {
     title: 'Como usar filtros de busca',
     body: 'Combine filtros por contato, etiqueta, canal e data para localizar conversas específicas com rapidez.',
  develop
+ codex/transform-chatwoot-into-synapsea-connect-7fgcn5
+
+ develop
+ develop
+ develop
+ develop
+ develop
   },
 };
 
 export const getContextHelpByKey = key => HELP_CONTENT[key];
  codex/transform-chatwoot-into-synapsea-connect-7fgcn5
+ codex/transform-chatwoot-into-synapsea-connect-7fgcn5
+
+ codex/transform-chatwoot-into-synapsea-connect-9ntkpr
+
+ codex/transform-chatwoot-into-synapsea-connect-2i3fp8
+
+ codex/transform-chatwoot-into-synapsea-connect-6xbxtt
+
+ codex/transform-chatwoot-into-synapsea-connect-vkjace
+
+ codex/transform-chatwoot-into-synapsea-connect-ymy4px
+ develop
+ develop
+ develop
+ develop
+ develop
 
 export const getAllContextHelp = () =>
   Object.entries(HELP_CONTENT).map(([key, value]) => ({
     key,
     ...value,
   }));
+ codex/transform-chatwoot-into-synapsea-connect-7fgcn5
 
+
+ codex/transform-chatwoot-into-synapsea-connect-9ntkpr
+
+ codex/transform-chatwoot-into-synapsea-connect-2i3fp8
+
+ codex/transform-chatwoot-into-synapsea-connect-6xbxtt
+
+ codex/transform-chatwoot-into-synapsea-connect-vkjace
+
+
+ develop
+ develop
+ develop
+ develop
+ develop
  develop
