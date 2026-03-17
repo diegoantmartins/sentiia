@@ -7,15 +7,74 @@ export type SupportedEventType =
   | 'ai.answer_generated'
   | 'ai.handoff_to_human'
  codex/transform-chatwoot-into-synapsea-connect-x6j2jp
+ codex/transform-chatwoot-into-synapsea-connect-x6j2jp
+
+ codex/transform-chatwoot-into-synapsea-connect-3xe9u8
+
+ codex/transform-chatwoot-into-synapsea-connect-7fgcn5
+ codex/transform-chatwoot-into-synapsea-connect-7fgcn5
+
+ codex/transform-chatwoot-into-synapsea-connect-nhivec
+ develop
+
+ codex/transform-chatwoot-into-synapsea-connect-9ntkpr
+
+ codex/transform-chatwoot-into-synapsea-connect-2i3fp8
+
+ codex/transform-chatwoot-into-synapsea-connect-6xbxtt
+ codex/transform-chatwoot-into-synapsea-connect-vkjace
+
+ codex/transform-chatwoot-into-synapsea-connect-ymy4px
+
+ codex/transform-chatwoot-into-synapsea-connect-nhivec
+ develop
+ develop
+ develop
+ develop
+ develop
+ develop
+ develop
+ develop
   | 'ai.resolved_without_human'
   | 'lead.qualified'
   | 'sla.first_response_breached'
   | 'sla.resolution_breached';
 
+ codex/transform-chatwoot-into-synapsea-connect-x6j2jp
   | 'lead.qualified'
   | 'sla.first_response_breached';
  develop
 
+ codex/transform-chatwoot-into-synapsea-connect-3xe9u8
+
+ codex/transform-chatwoot-into-synapsea-connect-7fgcn5
+ codex/transform-chatwoot-into-synapsea-connect-7fgcn5
+
+ codex/transform-chatwoot-into-synapsea-connect-9ntkpr
+
+ codex/transform-chatwoot-into-synapsea-connect-2i3fp8
+
+ codex/transform-chatwoot-into-synapsea-connect-6xbxtt
+
+ codex/transform-chatwoot-into-synapsea-connect-vkjace
+
+ codex/transform-chatwoot-into-synapsea-connect-ymy4px
+ develop
+
+  | 'lead.qualified'
+  | 'sla.first_response_breached';
+ develop
+
+ develop
+ codex/transform-chatwoot-into-synapsea-connect-7fgcn5
+ develop
+
+ develop
+ develop
+ develop
+ develop
+ develop
+ develop
 export type AnalyticsEvent = {
   eventType: SupportedEventType;
   source: 'chatwoot' | 'connect' | 'ai-service';

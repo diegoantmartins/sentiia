@@ -1,7 +1,39 @@
 <script setup>
+ codex/transform-chatwoot-into-synapsea-connect-x6j2jp
 import { computed } from 'vue';
 
 const props = defineProps({
+
+ codex/transform-chatwoot-into-synapsea-connect-3xe9u8
+import { computed } from 'vue';
+
+const props = defineProps({
+
+ codex/transform-chatwoot-into-synapsea-connect-9ntkpr
+import { computed } from 'vue';
+
+const props = defineProps({
+ codex/transform-chatwoot-into-synapsea-connect-zcodwn
+import AISuggestions from './conversation/AISuggestions.vue';
+
+defineProps({
+
+import { computed } from 'vue';
+ codex/transform-chatwoot-into-synapsea-connect-2i3fp8
+import { useI18n } from 'vue-i18n';
+
+
+ codex/transform-chatwoot-into-synapsea-connect-6xbxtt
+import { useI18n } from 'vue-i18n';
+
+ develop
+
+ develop
+const props = defineProps({
+ develop
+ develop
+ develop
+ develop
   conversation: {
     type: Object,
     default: () => ({}),
@@ -11,7 +43,35 @@ const props = defineProps({
     default: () => ({}),
   },
 });
+ codex/transform-chatwoot-into-synapsea-connect-x6j2jp
 
+
+ codex/transform-chatwoot-into-synapsea-connect-3xe9u8
+
+
+ codex/transform-chatwoot-into-synapsea-connect-9ntkpr
+
+
+ codex/transform-chatwoot-into-synapsea-connect-zcodwn
+</script>
+
+<template>
+  <AISuggestions :conversation="conversation" :contact="contact" />
+
+
+ codex/transform-chatwoot-into-synapsea-connect-2i3fp8
+const { t } = useI18n();
+
+
+ codex/transform-chatwoot-into-synapsea-connect-6xbxtt
+const { t } = useI18n();
+
+
+ develop
+ develop
+ develop
+ develop
+ develop
 const conversationAttributes = computed(
   () => props.conversation?.additional_attributes || {}
 );
@@ -88,18 +148,150 @@ const isSalesMode = computed(() => {
 });
 
 const isSupportMode = computed(() => !isSalesMode.value);
+ codex/transform-chatwoot-into-synapsea-connect-x6j2jp
 </script>
 
 <template>
   <div
     class="mx-2 mb-3 p-3 rounded-xl border border-n-slate-6 bg-n-background shadow-sm"
   >
+
+ codex/transform-chatwoot-into-synapsea-connect-3xe9u8
+</script>
+
+<template>
+  <div
+    class="mx-2 mb-3 p-3 rounded-xl border border-n-slate-6 bg-n-background shadow-sm"
+  >
+
+ codex/transform-chatwoot-into-synapsea-connect-9ntkpr
+</script>
+
+<template>
+  <div class="p-3 rounded-xl border border-n-weak bg-n-solid-2">
+
+ codex/transform-chatwoot-into-synapsea-connect-2i3fp8
+
+ codex/transform-chatwoot-into-synapsea-connect-6xbxtt
+ develop
+
+const resolveSuggestedAction = action => {
+  if (
+    action ===
+    'CONVERSATION_SIDEBAR.INTELLIGENT_PANEL.DEFAULT_ACTIONS.SEND_TEMPLATE'
+  ) {
+    return t(
+      'CONVERSATION_SIDEBAR.INTELLIGENT_PANEL.DEFAULT_ACTIONS.SEND_TEMPLATE'
+    );
+  }
+
+  if (
+    action ===
+    'CONVERSATION_SIDEBAR.INTELLIGENT_PANEL.DEFAULT_ACTIONS.CONFIRM_CONTEXT'
+  ) {
+    return t(
+      'CONVERSATION_SIDEBAR.INTELLIGENT_PANEL.DEFAULT_ACTIONS.CONFIRM_CONTEXT'
+    );
+  }
+
+  if (
+    action ===
+    'CONVERSATION_SIDEBAR.INTELLIGENT_PANEL.DEFAULT_ACTIONS.TRANSFER_QUEUE'
+  ) {
+    return t(
+      'CONVERSATION_SIDEBAR.INTELLIGENT_PANEL.DEFAULT_ACTIONS.TRANSFER_QUEUE'
+    );
+  }
+
+  return action;
+};
+
+const resolveKnowledgeItem = item => {
+  if (
+    item === 'CONVERSATION_SIDEBAR.INTELLIGENT_PANEL.DEFAULT_KNOWLEDGE.BILLING'
+  ) {
+    return t(
+      'CONVERSATION_SIDEBAR.INTELLIGENT_PANEL.DEFAULT_KNOWLEDGE.BILLING'
+    );
+  }
+
+  if (item === 'CONVERSATION_SIDEBAR.INTELLIGENT_PANEL.DEFAULT_KNOWLEDGE.SLA') {
+    return t('CONVERSATION_SIDEBAR.INTELLIGENT_PANEL.DEFAULT_KNOWLEDGE.SLA');
+  }
+
+  if (
+    item === 'CONVERSATION_SIDEBAR.INTELLIGENT_PANEL.DEFAULT_KNOWLEDGE.HANDOFF'
+  ) {
+    return t(
+      'CONVERSATION_SIDEBAR.INTELLIGENT_PANEL.DEFAULT_KNOWLEDGE.HANDOFF'
+    );
+  }
+
+  return item;
+};
+
+const resolvedNextBestAction = computed(() => {
+  if (
+    nextBestAction.value ===
+    'CONVERSATION_SIDEBAR.INTELLIGENT_PANEL.DEFAULT_NEXT_ACTION'
+  ) {
+    return t('CONVERSATION_SIDEBAR.INTELLIGENT_PANEL.DEFAULT_NEXT_ACTION');
+  }
+
+  return nextBestAction.value;
+});
+</script>
+
+<template>
+  <div class="p-3 rounded-xl border border-n-weak bg-n-solid-2">
+ codex/transform-chatwoot-into-synapsea-connect-2i3fp8
+
+
+</script>
+
+<template>
+ codex/transform-chatwoot-into-synapsea-connect-vkjace
+  <div class="p-3 rounded-xl border border-n-weak bg-n-solid-2">
+
+  <div
+    class="mx-2 mb-3 p-3 rounded-xl border border-n-slate-6 bg-n-background shadow-sm"
+  >
+ develop
+ develop
+ develop
+ develop
+ develop
+ develop
     <div class="flex items-center justify-between gap-2 mb-3">
       <h3 class="text-sm font-semibold text-n-slate-12">
         {{ $t('CONVERSATION_SIDEBAR.INTELLIGENT_PANEL.TITLE') }}
       </h3>
       <span
+ codex/transform-chatwoot-into-synapsea-connect-x6j2jp
         class="text-xs font-medium px-2 py-1 rounded-full bg-n-blue-3 text-n-blue-11"
+
+ codex/transform-chatwoot-into-synapsea-connect-3xe9u8
+        class="text-xs font-medium px-2 py-1 rounded-full bg-n-blue-3 text-n-blue-11"
+
+ codex/transform-chatwoot-into-synapsea-connect-9ntkpr
+        class="text-xs font-medium px-2 py-1 rounded-full bg-n-alpha-2 text-n-slate-11"
+
+ codex/transform-chatwoot-into-synapsea-connect-2i3fp8
+        class="text-xs font-medium px-2 py-1 rounded-full bg-n-alpha-2 text-n-slate-11"
+
+ codex/transform-chatwoot-into-synapsea-connect-6xbxtt
+        class="text-xs font-medium px-2 py-1 rounded-full bg-n-alpha-2 text-n-slate-11"
+
+ codex/transform-chatwoot-into-synapsea-connect-vkjace
+        class="text-xs font-medium px-2 py-1 rounded-full bg-n-alpha-2 text-n-slate-11"
+
+        class="text-xs font-medium px-2 py-1 rounded-full bg-n-blue-3 text-n-blue-11"
+ develop
+ develop
+ develop
+ develop
+ develop
+ develop
       >
         {{ $t('CONVERSATION_SIDEBAR.INTELLIGENT_PANEL.COPILOT') }}
       </span>
@@ -116,7 +308,41 @@ const isSupportMode = computed(() => !isSalesMode.value);
         <p class="text-n-slate-10">
           {{ $t('CONVERSATION_SIDEBAR.INTELLIGENT_PANEL.LEAD_SCORE') }}
         </p>
+ codex/transform-chatwoot-into-synapsea-connect-x6j2jp
         <p class="font-semibold text-n-slate-12">{{ leadScore }}%</p>
+
+ codex/transform-chatwoot-into-synapsea-connect-3xe9u8
+        <p class="font-semibold text-n-slate-12">{{ leadScore }}%</p>
+
+ codex/transform-chatwoot-into-synapsea-connect-9ntkpr
+        <p class="font-semibold text-n-slate-12">{{ leadScore }}%</p>
+
+ codex/transform-chatwoot-into-synapsea-connect-2i3fp8
+
+ codex/transform-chatwoot-into-synapsea-connect-6xbxtt
+
+ codex/transform-chatwoot-into-synapsea-connect-vkjace
+ develop
+ develop
+        <p class="font-semibold text-n-slate-12">
+          {{
+            $t('CONVERSATION_SIDEBAR.INTELLIGENT_PANEL.PERCENT_VALUE', {
+              value: leadScore,
+            })
+          }}
+        </p>
+ codex/transform-chatwoot-into-synapsea-connect-2i3fp8
+
+ codex/transform-chatwoot-into-synapsea-connect-6xbxtt
+
+
+        <p class="font-semibold text-n-slate-12">{{ leadScore }}%</p>
+ develop
+ develop
+ develop
+ develop
+ develop
+ develop
       </div>
     </div>
 
@@ -153,9 +379,35 @@ const isSupportMode = computed(() => !isSalesMode.value);
           {{ $t('CONVERSATION_SIDEBAR.INTELLIGENT_PANEL.NEXT_ACTION') }}
         </p>
         <p class="text-n-slate-10">
+ codex/transform-chatwoot-into-synapsea-connect-x6j2jp
           {{
             nextBestAction.includes('.') ? $t(nextBestAction) : nextBestAction
           }}
+
+ codex/transform-chatwoot-into-synapsea-connect-3xe9u8
+          {{
+            nextBestAction.includes('.') ? $t(nextBestAction) : nextBestAction
+          }}
+
+ codex/transform-chatwoot-into-synapsea-connect-9ntkpr
+          {{
+            nextBestAction.includes('.') ? $t(nextBestAction) : nextBestAction
+          }}
+
+ codex/transform-chatwoot-into-synapsea-connect-2i3fp8
+          {{ resolvedNextBestAction }}
+
+ codex/transform-chatwoot-into-synapsea-connect-6xbxtt
+          {{ resolvedNextBestAction }}
+
+          {{
+            nextBestAction.includes('.') ? $t(nextBestAction) : nextBestAction
+          }}
+ develop
+ develop
+ develop
+ develop
+ develop
         </p>
       </section>
 
@@ -165,7 +417,27 @@ const isSupportMode = computed(() => !isSalesMode.value);
         </p>
         <ul class="space-y-1 text-n-slate-10 list-disc pl-4">
           <li v-for="action in suggestedActions" :key="action">
+ codex/transform-chatwoot-into-synapsea-connect-x6j2jp
             {{ action.includes('.') ? $t(action) : action }}
+
+ codex/transform-chatwoot-into-synapsea-connect-3xe9u8
+            {{ action.includes('.') ? $t(action) : action }}
+
+ codex/transform-chatwoot-into-synapsea-connect-9ntkpr
+            {{ action.includes('.') ? $t(action) : action }}
+
+ codex/transform-chatwoot-into-synapsea-connect-2i3fp8
+            {{ resolveSuggestedAction(action) }}
+
+ codex/transform-chatwoot-into-synapsea-connect-6xbxtt
+            {{ resolveSuggestedAction(action) }}
+
+            {{ action.includes('.') ? $t(action) : action }}
+ develop
+ develop
+ develop
+ develop
+ develop
           </li>
         </ul>
       </section>
@@ -176,13 +448,69 @@ const isSupportMode = computed(() => !isSalesMode.value);
         </p>
         <ul class="space-y-1 text-n-slate-10 list-disc pl-4">
           <li v-for="item in knowledgeArticles" :key="item">
+ codex/transform-chatwoot-into-synapsea-connect-x6j2jp
             {{ item.includes('.') ? $t(item) : item }}
+
+ codex/transform-chatwoot-into-synapsea-connect-3xe9u8
+            {{ item.includes('.') ? $t(item) : item }}
+
+ codex/transform-chatwoot-into-synapsea-connect-9ntkpr
+            {{ item.includes('.') ? $t(item) : item }}
+
+ codex/transform-chatwoot-into-synapsea-connect-2i3fp8
+            {{ resolveKnowledgeItem(item) }}
+ codex/transform-chatwoot-into-synapsea-connect-6xbxtt
+            {{ resolveKnowledgeItem(item) }}
+
+            {{ item.includes('.') ? $t(item) : item }}
+ develop
+ develop
+ develop
+ develop
+ develop
           </li>
         </ul>
       </section>
 
       <section
         v-if="isSalesMode"
+ codex/transform-chatwoot-into-synapsea-connect-x6j2jp
+
+ codex/transform-chatwoot-into-synapsea-connect-3xe9u8
+
+ codex/transform-chatwoot-into-synapsea-connect-9ntkpr
+
+ codex/transform-chatwoot-into-synapsea-connect-2i3fp8
+
+ codex/transform-chatwoot-into-synapsea-connect-6xbxtt
+
+ codex/transform-chatwoot-into-synapsea-connect-vkjace
+ develop
+ develop
+ develop
+        class="rounded-lg border border-n-weak bg-n-slate-2 p-2"
+      >
+        <p class="text-n-slate-12 font-medium mb-1">
+          {{ $t('CONVERSATION_SIDEBAR.INTELLIGENT_PANEL.SALES_MODE') }}
+        </p>
+        <p class="text-n-slate-11">
+ codex/transform-chatwoot-into-synapsea-connect-9ntkpr
+          {{ $t('CONVERSATION_SIDEBAR.INTELLIGENT_PANEL.CLOSE_PROBABILITY') }}:
+          <span class="font-semibold">{{ probabilityToClose }}%</span>
+
+          {{
+            $t(
+              'CONVERSATION_SIDEBAR.INTELLIGENT_PANEL.CLOSE_PROBABILITY_VALUE',
+              { value: probabilityToClose }
+            )
+          }}
+ codex/transform-chatwoot-into-synapsea-connect-2i3fp8
+
+ codex/transform-chatwoot-into-synapsea-connect-6xbxtt
+
+
+ develop
+ develop
         class="rounded-lg border border-n-green-5 p-2"
       >
         <p class="text-n-green-11 font-medium mb-1">
@@ -191,14 +519,60 @@ const isSupportMode = computed(() => !isSalesMode.value);
         <p class="text-n-slate-11">
           {{ $t('CONVERSATION_SIDEBAR.INTELLIGENT_PANEL.CLOSE_PROBABILITY') }}:
           <span class="font-semibold">{{ probabilityToClose }}%</span>
+ codex/transform-chatwoot-into-synapsea-connect-x6j2jp
+
+ codex/transform-chatwoot-into-synapsea-connect-3xe9u8
+
+ develop
+ develop
+ develop
+ develop
+ develop
+ develop
         </p>
       </section>
 
       <section
         v-if="isSupportMode"
+ codex/transform-chatwoot-into-synapsea-connect-x6j2jp
         class="rounded-lg border border-n-violet-5 p-2"
       >
         <p class="text-n-violet-11 font-medium mb-1">
+
+ codex/transform-chatwoot-into-synapsea-connect-3xe9u8
+        class="rounded-lg border border-n-violet-5 p-2"
+      >
+        <p class="text-n-violet-11 font-medium mb-1">
+
+ codex/transform-chatwoot-into-synapsea-connect-9ntkpr
+        class="rounded-lg border border-n-weak bg-n-slate-2 p-2"
+      >
+        <p class="text-n-slate-12 font-medium mb-1">
+
+ codex/transform-chatwoot-into-synapsea-connect-2i3fp8
+        class="rounded-lg border border-n-weak bg-n-slate-2 p-2"
+      >
+        <p class="text-n-slate-12 font-medium mb-1">
+
+ codex/transform-chatwoot-into-synapsea-connect-6xbxtt
+        class="rounded-lg border border-n-weak bg-n-slate-2 p-2"
+      >
+        <p class="text-n-slate-12 font-medium mb-1">
+
+ codex/transform-chatwoot-into-synapsea-connect-vkjace
+        class="rounded-lg border border-n-weak bg-n-slate-2 p-2"
+      >
+        <p class="text-n-slate-12 font-medium mb-1">
+
+        class="rounded-lg border border-n-violet-5 p-2"
+      >
+        <p class="text-n-violet-11 font-medium mb-1">
+ develop
+ develop
+ develop
+ develop
+ develop
+ develop
           {{ $t('CONVERSATION_SIDEBAR.INTELLIGENT_PANEL.SUPPORT_MODE') }}
         </p>
         <p class="text-n-slate-11">
@@ -207,4 +581,14 @@ const isSupportMode = computed(() => !isSalesMode.value);
       </section>
     </div>
   </div>
+ codex/transform-chatwoot-into-synapsea-connect-x6j2jp
+
+ codex/transform-chatwoot-into-synapsea-connect-3xe9u8
+
+ codex/transform-chatwoot-into-synapsea-connect-9ntkpr
+
+ develop
+ develop
+ develop
+ develop
 </template>

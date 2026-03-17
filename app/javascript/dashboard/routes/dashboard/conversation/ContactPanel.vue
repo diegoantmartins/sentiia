@@ -25,8 +25,49 @@ import LinearIssuesList from 'dashboard/components/widgets/conversation/linear/I
 import LinearSetupCTA from 'dashboard/components/widgets/conversation/linear/LinearSetupCTA.vue';
 import SynapseaContactIntelligence from 'dashboard/components-next/synapsea/SynapseaContactIntelligence.vue';
  codex/transform-chatwoot-into-synapsea-connect-x6j2jp
+ codex/transform-chatwoot-into-synapsea-connect-x6j2jp
 import SynapseaConversationCopilot from 'dashboard/components-next/synapsea/SynapseaConversationCopilot.vue';
 
+
+ codex/transform-chatwoot-into-synapsea-connect-3xe9u8
+import SynapseaConversationCopilot from 'dashboard/components-next/synapsea/SynapseaConversationCopilot.vue';
+
+ codex/transform-chatwoot-into-synapsea-connect-7fgcn5
+ codex/transform-chatwoot-into-synapsea-connect-7fgcn5
+
+ codex/transform-chatwoot-into-synapsea-connect-9ntkpr
+import SynapseaConversationCopilot from 'dashboard/components-next/synapsea/SynapseaConversationCopilot.vue';
+
+ codex/transform-chatwoot-into-synapsea-connect-zcodwn
+import SynapseaConversationCopilot from 'dashboard/components-next/synapsea/SynapseaConversationCopilot.vue';
+
+ codex/transform-chatwoot-into-synapsea-connect-2i3fp8
+import SynapseaConversationCopilot from 'dashboard/components-next/synapsea/SynapseaConversationCopilot.vue';
+
+ codex/transform-chatwoot-into-synapsea-connect-6xbxtt
+import SynapseaConversationCopilot from 'dashboard/components-next/synapsea/SynapseaConversationCopilot.vue';
+
+ codex/transform-chatwoot-into-synapsea-connect-vkjace
+import SynapseaConversationCopilot from 'dashboard/components-next/synapsea/SynapseaConversationCopilot.vue';
+
+ codex/transform-chatwoot-into-synapsea-connect-ymy4px
+ develop
+import SynapseaConversationCopilot from 'dashboard/components-next/synapsea/SynapseaConversationCopilot.vue';
+
+ codex/transform-chatwoot-into-synapsea-connect-nhivec
+import SynapseaConversationCopilot from 'dashboard/components-next/synapsea/SynapseaConversationCopilot.vue';
+
+ develop
+ develop
+ codex/transform-chatwoot-into-synapsea-connect-7fgcn5
+
+ develop
+ develop
+ develop
+ develop
+ develop
+ develop
+ develop
  develop
 
 const props = defineProps({
@@ -142,16 +183,101 @@ onMounted(() => {
       @close="closeContactPanel"
     />
     <ContactInfo :contact="contact" :channel-type="channelType" />
+ codex/transform-chatwoot-into-synapsea-connect-3xe9u8
+
+ codex/transform-chatwoot-into-synapsea-connect-9ntkpr
+
+ codex/transform-chatwoot-into-synapsea-connect-zcodwn
+
+ codex/transform-chatwoot-into-synapsea-connect-2i3fp8
+
+ codex/transform-chatwoot-into-synapsea-connect-6xbxtt
+
+ codex/transform-chatwoot-into-synapsea-connect-vkjace
+ develop
+ develop
+ develop
+ develop
+    <section class="px-2 py-3 border-b border-n-weak bg-n-surface-1">
+      <p
+        class="mb-2 text-xs font-semibold tracking-wide uppercase text-n-slate-10"
+      >
+        {{ $t('CONVERSATION_SIDEBAR.INTELLIGENT_PANEL.TITLE') }}
+      </p>
+      <div class="grid gap-3">
+        <SynapseaConversationCopilot
+          :contact="contact"
+          :conversation="currentChat"
+        />
+ codex/transform-chatwoot-into-synapsea-connect-9ntkpr
+
+ codex/transform-chatwoot-into-synapsea-connect-zcodwn
+        <SynapseaContactIntelligence :contact="contact" />
+      </div>
+    </section>
+
+ develop
+        <SynapseaContactIntelligence
+          :contact="contact"
+          :conversation="currentChat"
+        />
+      </div>
+    </section>
+ codex/transform-chatwoot-into-synapsea-connect-9ntkpr
+
+ codex/transform-chatwoot-into-synapsea-connect-2i3fp8
+
+ codex/transform-chatwoot-into-synapsea-connect-6xbxtt
+
+
+ develop
     <SynapseaContactIntelligence
       :contact="contact"
       :conversation="currentChat"
     />
+ codex/transform-chatwoot-into-synapsea-connect-x6j2jp
 codex/transform-chatwoot-into-synapsea-connect-x6j2jp
+
+
+codex/transform-chatwoot-into-synapsea-connect-3xe9u8
+
+ codex/transform-chatwoot-into-synapsea-connect-7fgcn5
+ codex/transform-chatwoot-into-synapsea-connect-7fgcn5
+
+ codex/transform-chatwoot-into-synapsea-connect-ymy4px
+ develop
+
+ codex/transform-chatwoot-into-synapsea-connect-nhivec
+ develop
+ develop
+ develop
     <SynapseaConversationCopilot
       :contact="contact"
       :conversation="currentChat"
     />
+ codex/transform-chatwoot-into-synapsea-connect-x6j2jp
 
+
+ codex/transform-chatwoot-into-synapsea-connect-3xe9u8
+
+ codex/transform-chatwoot-into-synapsea-connect-7fgcn5
+ codex/transform-chatwoot-into-synapsea-connect-7fgcn5
+
+ codex/transform-chatwoot-into-synapsea-connect-ymy4px
+ develop
+
+
+ develop
+ develop
+ codex/transform-chatwoot-into-synapsea-connect-7fgcn5
+
+ develop
+ develop
+ develop
+ develop
+ develop
+ develop
+ develop
  develop
     <div class="px-2 pb-8 list-group">
       <Draggable
@@ -318,11 +444,3 @@ codex/transform-chatwoot-into-synapsea-connect-x6j2jp
     </div>
   </div>
 </template>
-
-<style lang="scss" scoped>
-::v-deep {
-  .contact--profile {
-    @apply pb-3 border-b border-solid border-n-weak;
-  }
-}
-</style>

@@ -8,9 +8,47 @@ export const registerAiReportRoutes = (app: FastifyInstance) => {
   app.post('/api/reports/ask-ai', async request => {
     const payload = askAiSchema.parse(request.body);
  codex/transform-chatwoot-into-synapsea-connect-x6j2jp
+ codex/transform-chatwoot-into-synapsea-connect-x6j2jp
+
+ codex/transform-chatwoot-into-synapsea-connect-3xe9u8
+    return await service.execute(payload);
+
+ codex/transform-chatwoot-into-synapsea-connect-7fgcn5
+ codex/transform-chatwoot-into-synapsea-connect-7fgcn5
+
+ codex/transform-chatwoot-into-synapsea-connect-9ntkpr
+    return await service.execute(payload);
+
+ codex/transform-chatwoot-into-synapsea-connect-2i3fp8
+    return await service.execute(payload);
+
+ codex/transform-chatwoot-into-synapsea-connect-6xbxtt
+    return await service.execute(payload);
+
+ codex/transform-chatwoot-into-synapsea-connect-vkjace
+    return await service.execute(payload);
+
+ codex/transform-chatwoot-into-synapsea-connect-ymy4px
+ develop
+    return await service.execute(payload);
+
+ codex/transform-chatwoot-into-synapsea-connect-nhivec
+ develop
     return await service.execute(payload);
 
     return service.execute(payload);
+ develop
+ codex/transform-chatwoot-into-synapsea-connect-x6j2jp
+
+ develop
+ codex/transform-chatwoot-into-synapsea-connect-7fgcn5
+
+ develop
+ develop
+ develop
+ develop
+ develop
+ develop
  develop
   });
 };
