@@ -8,9 +8,19 @@ defineProps({
     type: [String, Number],
     required: true,
   },
+ codex/transform-chatwoot-into-synapsea-connect-9ntkpr
   delta: {
     type: Number,
     default: 0,
+
+  deltaText: {
+    type: String,
+    default: '',
+  },
+  isPositiveDelta: {
+    type: Boolean,
+    default: true,
+ develop
   },
   comparisonLabel: {
     type: String,
@@ -29,9 +39,15 @@ defineProps({
     </p>
     <p
       class="m-0 mt-1 text-xs"
+ codex/transform-chatwoot-into-synapsea-connect-9ntkpr
       :class="delta >= 0 ? 'text-n-teal-10' : 'text-n-ruby-9'"
     >
       {{ delta >= 0 ? '+' : '' }}{{ delta }}% {{ comparisonLabel }}
+
+      :class="isPositiveDelta ? 'text-n-teal-10' : 'text-n-ruby-9'"
+    >
+      {{ deltaText }} {{ comparisonLabel }}
+ develop
     </p>
   </article>
 </template>

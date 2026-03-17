@@ -1,5 +1,15 @@
 <script setup>
 import { computed, onMounted } from 'vue';
+ codex/transform-chatwoot-into-synapsea-connect-9ntkpr
+
+ codex/transform-chatwoot-into-synapsea-connect-2i3fp8
+
+ codex/transform-chatwoot-into-synapsea-connect-6xbxtt
+
+ codex/transform-chatwoot-into-synapsea-connect-vkjace
+ develop
+ develop
+ develop
 import { formatTime } from '@chatwoot/utils';
 import { useI18n } from 'vue-i18n';
 import { useMapGetter, useStore } from 'dashboard/composables/store';
@@ -116,11 +126,60 @@ const topQueues = computed(() => {
 
 const topChannels = computed(() => {
   const channels = (inboxes.value || []).reduce((acc, inbox) => {
+ codex/transform-chatwoot-into-synapsea-connect-9ntkpr
+
+ codex/transform-chatwoot-into-synapsea-connect-2i3fp8
+
+ codex/transform-chatwoot-into-synapsea-connect-6xbxtt
+
+
+import { useMapGetter, useStore } from 'dashboard/composables/store';
+import { formatTime } from '@chatwoot/utils';
+
+const store = useStore();
+const accountSummary = useMapGetter('getAccountSummary');
+const agentConversationMetric = useMapGetter('getAgentConversationMetric');
+const inboxes = useMapGetter('inboxes/getInboxes');
+
+const avgResponseTime = computed(() =>
+  formatTime(accountSummary.value?.avg_first_response_time || 0)
+);
+
+const leadConversions = computed(
+  () => accountSummary.value?.resolutions_count || 0
+);
+
+const topAgentPerformance = computed(() => {
+  const metricList = agentConversationMetric.value || [];
+  if (!metricList.length) return 0;
+
+  return metricList.reduce(
+    (maxValue, item) => Math.max(maxValue, item?.value || 0),
+    0
+  );
+});
+
+const topContactOrigin = computed(() => {
+  const channelCount = (inboxes.value || []).reduce((acc, inbox) => {
+ develop
+ develop
+ develop
+ develop
     const key = inbox.channel_type || 'unknown';
     acc[key] = (acc[key] || 0) + 1;
     return acc;
   }, {});
 
+ codex/transform-chatwoot-into-synapsea-connect-9ntkpr
+
+ codex/transform-chatwoot-into-synapsea-connect-2i3fp8
+
+ codex/transform-chatwoot-into-synapsea-connect-6xbxtt
+
+ codex/transform-chatwoot-into-synapsea-connect-vkjace
+ develop
+ develop
+ develop
   return Object.entries(channels)
     .map(([label, value]) => ({ label, value }))
     .sort((a, b) => b.value - a.value)
@@ -170,6 +229,44 @@ const percentText = value =>
 const currencyText = value =>
   `${t('REPORT.SYNAPSEA_ANALYTICS.CURRENCY_SYMBOL')}${value}`;
 
+ codex/transform-chatwoot-into-synapsea-connect-9ntkpr
+
+ codex/transform-chatwoot-into-synapsea-connect-2i3fp8
+
+ codex/transform-chatwoot-into-synapsea-connect-6xbxtt
+ develop
+const trendPercentText = value =>
+  `${value}${t('REPORT.SYNAPSEA_ANALYTICS.PERCENT_SUFFIX')}`;
+
+const deltaText = value => {
+  const abs = Math.abs(value);
+
+  if (value >= 0) {
+    return t('REPORT.SYNAPSEA_ANALYTICS.DELTA_UP', {
+      value: abs,
+      suffix: t('REPORT.SYNAPSEA_ANALYTICS.PERCENT_SUFFIX'),
+    });
+  }
+
+  return t('REPORT.SYNAPSEA_ANALYTICS.DELTA_DOWN', {
+ codex/transform-chatwoot-into-synapsea-connect-2i3fp8
+
+
+const deltaText = value => {
+  const abs = Math.abs(value);
+  const signKey =
+    value >= 0
+      ? 'REPORT.SYNAPSEA_ANALYTICS.DELTA_UP'
+      : 'REPORT.SYNAPSEA_ANALYTICS.DELTA_DOWN';
+  return t(signKey, {
+ develop
+ develop
+    value: abs,
+    suffix: t('REPORT.SYNAPSEA_ANALYTICS.PERCENT_SUFFIX'),
+  });
+};
+
+ develop
 const periodLabel = computed(() => {
   if (!props.from || !props.to)
     return t('REPORT.SYNAPSEA_ANALYTICS.SELECTED_PERIOD');
@@ -266,11 +363,42 @@ const kpiCards = computed(() => [
 onMounted(() => {
   store.dispatch('fetchAgentConversationMetric');
   store.dispatch('fetchTeamConversationMetric');
+ codex/transform-chatwoot-into-synapsea-connect-9ntkpr
+
+ codex/transform-chatwoot-into-synapsea-connect-2i3fp8
+
+ codex/transform-chatwoot-into-synapsea-connect-6xbxtt
+
+
+  const [topChannel] = Object.entries(channelCount).sort(
+    ([, a], [, b]) => b - a
+  );
+
+  if (!topChannel) return '—';
+  return topChannel[0];
+});
+
+onMounted(() => {
+  store.dispatch('fetchAgentConversationMetric');
+ develop
+ develop
+ develop
+ develop
   store.dispatch('inboxes/get');
 });
 </script>
 
 <template>
+ codex/transform-chatwoot-into-synapsea-connect-9ntkpr
+
+ codex/transform-chatwoot-into-synapsea-connect-2i3fp8
+
+ codex/transform-chatwoot-into-synapsea-connect-6xbxtt
+
+ codex/transform-chatwoot-into-synapsea-connect-vkjace
+ develop
+ develop
+ develop
   <section
     class="mt-4 rounded-2xl border border-n-weak bg-n-slate-2 p-4 md:p-5"
   >
@@ -316,7 +444,12 @@ onMounted(() => {
         :key="card.key"
         :label="card.label"
         :value="card.value"
+ codex/transform-chatwoot-into-synapsea-connect-9ntkpr
         :delta="card.delta"
+
+        :delta-text="deltaText(card.delta)"
+        :is-positive-delta="card.delta >= 0"
+ develop
         :comparison-label="$t('REPORT.SYNAPSEA_ANALYTICS.COMPARED_PERIOD')"
       />
     </div>
@@ -441,6 +574,7 @@ onMounted(() => {
         />
         <div class="space-y-2 text-sm">
           <p class="m-0 flex items-center justify-between">
+ codex/transform-chatwoot-into-synapsea-connect-9ntkpr
             <span>{{ $t('REPORT.SYNAPSEA_ANALYTICS.AI_STARTED') }}</span
             ><strong>{{ aiResolved + aiHandoffs }}</strong>
           </p>
@@ -455,12 +589,33 @@ onMounted(() => {
           <p class="m-0 flex items-center justify-between">
             <span>{{ $t('REPORT.SYNAPSEA_ANALYTICS.AI_FALLBACK') }}</span
             ><strong>{{ percentText(aiFallbackRate) }}</strong>
+
+            <span>{{ $t('REPORT.SYNAPSEA_ANALYTICS.AI_STARTED') }}</span>
+            <strong>{{ aiResolved + aiHandoffs }}</strong>
+          </p>
+          <p class="m-0 flex items-center justify-between">
+            <span>{{ $t('REPORT.SYNAPSEA_ANALYTICS.AI_RESOLVED') }}</span>
+            <strong>{{ aiResolved }}</strong>
+          </p>
+          <p class="m-0 flex items-center justify-between">
+            <span>{{ $t('REPORT.SYNAPSEA_ANALYTICS.AI_HANDOFF') }}</span>
+            <strong>{{ aiHandoffs }}</strong>
+          </p>
+          <p class="m-0 flex items-center justify-between">
+            <span>{{ $t('REPORT.SYNAPSEA_ANALYTICS.AI_FALLBACK') }}</span>
+            <strong>{{ percentText(aiFallbackRate) }}</strong>
+ develop
           </p>
           <p class="m-0 flex items-center justify-between">
             <span>{{
               $t('REPORT.SYNAPSEA_ANALYTICS.AUTOMATIONS_EXECUTED')
+ codex/transform-chatwoot-into-synapsea-connect-9ntkpr
             }}</span
             ><strong>{{ automationRuns }}</strong>
+
+            }}</span>
+            <strong>{{ automationRuns }}</strong>
+ develop
           </p>
         </div>
       </section>
@@ -496,8 +651,38 @@ onMounted(() => {
         />
         <div class="space-y-2 text-sm">
           <p class="m-0 flex items-center justify-between">
+ codex/transform-chatwoot-into-synapsea-connect-9ntkpr
             <span>{{ $t('REPORT.SYNAPSEA_ANALYTICS.TREND_TODAY') }}</span
             ><strong
+
+            <span>{{ $t('REPORT.SYNAPSEA_ANALYTICS.TREND_TODAY') }}</span>
+ codex/transform-chatwoot-into-synapsea-connect-2i3fp8
+
+ codex/transform-chatwoot-into-synapsea-connect-6xbxtt
+ develop
+            <strong>{{
+              trendPercentText(
+                getDelta(conversationCount, previousSummary.conversations_count)
+              )
+            }}</strong>
+          </p>
+          <p class="m-0 flex items-center justify-between">
+            <span>{{ $t('REPORT.SYNAPSEA_ANALYTICS.TREND_WEEK') }}</span>
+            <strong>{{
+              trendPercentText(
+                getDelta(resolutionCount, previousSummary.resolutions_count)
+              )
+            }}</strong>
+          </p>
+          <p class="m-0 flex items-center justify-between">
+            <span>{{ $t('REPORT.SYNAPSEA_ANALYTICS.TREND_MONTH') }}</span>
+            <strong>{{
+              trendPercentText(
+ codex/transform-chatwoot-into-synapsea-connect-2i3fp8
+
+
+            <strong
+ develop
               >{{
                 getDelta(
                   conversationCount,
@@ -507,36 +692,87 @@ onMounted(() => {
             >
           </p>
           <p class="m-0 flex items-center justify-between">
+ codex/transform-chatwoot-into-synapsea-connect-9ntkpr
             <span>{{ $t('REPORT.SYNAPSEA_ANALYTICS.TREND_WEEK') }}</span
             ><strong
+
+            <span>{{ $t('REPORT.SYNAPSEA_ANALYTICS.TREND_WEEK') }}</span>
+            <strong
+ develop
               >{{ getDelta(resolutionCount, previousSummary.resolutions_count)
               }}{{ $t('REPORT.SYNAPSEA_ANALYTICS.PERCENT_SUFFIX') }}</strong
             >
           </p>
           <p class="m-0 flex items-center justify-between">
+ codex/transform-chatwoot-into-synapsea-connect-9ntkpr
             <span>{{ $t('REPORT.SYNAPSEA_ANALYTICS.TREND_MONTH') }}</span
             ><strong
               >{{
+
+            <span>{{ $t('REPORT.SYNAPSEA_ANALYTICS.TREND_MONTH') }}</span>
+            <strong
+              >{{
+ develop
+ develop
+ develop
                 getDelta(
                   estimatedRevenue,
                   (previousSummary.resolutions_count || 0) * 120
                 )
+ codex/transform-chatwoot-into-synapsea-connect-9ntkpr
+ codex/transform-chatwoot-into-synapsea-connect-2i3fp8
+
+ codex/transform-chatwoot-into-synapsea-connect-6xbxtt
+ develop
+              )
+            }}</strong>
+          </p>
+          <p class="m-0 flex items-center justify-between">
+            <span>{{ $t('REPORT.SYNAPSEA_ANALYTICS.TREND_SLA') }}</span>
+            <strong>{{
+              trendPercentText(getDelta(slaHealthyRate, 80))
+            }}</strong>
+          </p>
+          <p class="m-0 flex items-center justify-between">
+            <span>{{ $t('REPORT.SYNAPSEA_ANALYTICS.TREND_AI') }}</span>
+            <strong>{{
+              trendPercentText(getDelta(aiEfficiencyRate, 20))
+            }}</strong>
+ codex/transform-chatwoot-into-synapsea-connect-2i3fp8
+
+
+ develop
               }}{{ $t('REPORT.SYNAPSEA_ANALYTICS.PERCENT_SUFFIX') }}</strong
             >
           </p>
           <p class="m-0 flex items-center justify-between">
+ codex/transform-chatwoot-into-synapsea-connect-9ntkpr
             <span>{{ $t('REPORT.SYNAPSEA_ANALYTICS.TREND_SLA') }}</span
             ><strong
+
+            <span>{{ $t('REPORT.SYNAPSEA_ANALYTICS.TREND_SLA') }}</span>
+            <strong
+ develop
               >{{ getDelta(slaHealthyRate, 80)
               }}{{ $t('REPORT.SYNAPSEA_ANALYTICS.PERCENT_SUFFIX') }}</strong
             >
           </p>
           <p class="m-0 flex items-center justify-between">
+ codex/transform-chatwoot-into-synapsea-connect-9ntkpr
             <span>{{ $t('REPORT.SYNAPSEA_ANALYTICS.TREND_AI') }}</span
             ><strong
               >{{ getDelta(aiEfficiencyRate, 20)
               }}{{ $t('REPORT.SYNAPSEA_ANALYTICS.PERCENT_SUFFIX') }}</strong
             >
+
+            <span>{{ $t('REPORT.SYNAPSEA_ANALYTICS.TREND_AI') }}</span>
+            <strong
+              >{{ getDelta(aiEfficiencyRate, 20)
+              }}{{ $t('REPORT.SYNAPSEA_ANALYTICS.PERCENT_SUFFIX') }}</strong
+            >
+ develop
+ develop
+ develop
           </p>
         </div>
       </section>
@@ -588,5 +824,59 @@ onMounted(() => {
         </article>
       </div>
     </section>
+ codex/transform-chatwoot-into-synapsea-connect-9ntkpr
+
+ codex/transform-chatwoot-into-synapsea-connect-2i3fp8
+
+ codex/transform-chatwoot-into-synapsea-connect-6xbxtt
+
+
+  <section class="mt-4 rounded-xl border border-n-weak bg-n-solid-2 p-4">
+    <header class="mb-3">
+      <h3 class="m-0 text-sm font-medium text-n-slate-12">
+        {{ $t('REPORT.SYNAPSEA_ANALYTICS.TITLE') }}
+      </h3>
+      <p class="m-0 text-xs text-n-slate-11">
+        {{ $t('REPORT.SYNAPSEA_ANALYTICS.DESCRIPTION') }}
+      </p>
+    </header>
+    <div class="grid grid-cols-1 gap-2 md:grid-cols-2 xl:grid-cols-4">
+      <article class="rounded-lg bg-n-alpha-2 p-3">
+        <p class="m-0 text-xs text-n-slate-11">
+          {{ $t('REPORT.SYNAPSEA_ANALYTICS.AVG_RESPONSE_TIME') }}
+        </p>
+        <p class="m-0 text-base font-medium text-n-slate-12">
+          {{ avgResponseTime }}
+        </p>
+      </article>
+      <article class="rounded-lg bg-n-alpha-2 p-3">
+        <p class="m-0 text-xs text-n-slate-11">
+          {{ $t('REPORT.SYNAPSEA_ANALYTICS.LEAD_CONVERSIONS') }}
+        </p>
+        <p class="m-0 text-base font-medium text-n-slate-12">
+          {{ leadConversions }}
+        </p>
+      </article>
+      <article class="rounded-lg bg-n-alpha-2 p-3">
+        <p class="m-0 text-xs text-n-slate-11">
+          {{ $t('REPORT.SYNAPSEA_ANALYTICS.AGENT_PERFORMANCE') }}
+        </p>
+        <p class="m-0 text-base font-medium text-n-slate-12">
+          {{ topAgentPerformance }}
+        </p>
+      </article>
+      <article class="rounded-lg bg-n-alpha-2 p-3">
+        <p class="m-0 text-xs text-n-slate-11">
+          {{ $t('REPORT.SYNAPSEA_ANALYTICS.CONTACT_ORIGIN') }}
+        </p>
+        <p class="m-0 text-base font-medium capitalize text-n-slate-12">
+          {{ topContactOrigin }}
+        </p>
+      </article>
+    </div>
+ develop
+ develop
+ develop
+ develop
   </section>
 </template>

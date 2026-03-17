@@ -406,7 +406,7 @@ const deleteConversation = () => {
           class="shadow-lg rounded-full text-xxs font-semibold h-4 leading-4 ltr:ml-auto rtl:mr-auto mt-1 min-w-[1rem] px-1 py-0 text-center text-white bg-n-teal-9"
           :class="hasUnread ? 'block' : 'hidden'"
         >
-          {{ unreadCount > 9 ? '9+' : unreadCount }}
+          {{ Math.min(unreadCount, 9) }}
         </span>
       </div>
       <CardLabels
