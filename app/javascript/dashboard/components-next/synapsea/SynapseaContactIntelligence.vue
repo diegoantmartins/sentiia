@@ -1,4 +1,9 @@
 <script setup>
+ codex/transform-chatwoot-into-synapsea-connect-j4qiji
+import ClientPanel from './conversation/ClientPanel.vue';
+
+defineProps({
+
   codex/transform-chatwoot-into-synapsea-connect-3xe9u8
 
  codex/transform-chatwoot-into-synapsea-connect-9ntkpr
@@ -21,10 +26,13 @@ const props = defineProps({
  develop
  develop
  develop
+ develop
   contact: {
     type: Object,
     default: () => ({}),
   },
+ codex/transform-chatwoot-into-synapsea-connect-j4qiji
+
   codex/transform-chatwoot-into-synapsea-connect-3xe9u8
 
  codex/transform-chatwoot-into-synapsea-connect-9ntkpr
@@ -126,10 +134,14 @@ const interactionHistory = computed(() => {
  develop
  develop
  develop
+ develop
 });
 </script>
 
 <template>
+ codex/transform-chatwoot-into-synapsea-connect-j4qiji
+  <ClientPanel :contact="contact" />
+
   codex/transform-chatwoot-into-synapsea-connect-3xe9u8
   <div class="grid gap-3 px-2 pb-3">
     <section class="rounded-xl border border-n-weak bg-n-solid-2 p-3">
@@ -351,6 +363,7 @@ const interactionHistory = computed(() => {
 
  codex/transform-chatwoot-into-synapsea-connect-9ntkpr
 
+ develop
  develop
  develop
  develop

@@ -1,4 +1,9 @@
 <script setup>
+ codex/transform-chatwoot-into-synapsea-connect-j4qiji
+import AISuggestions from './conversation/AISuggestions.vue';
+
+defineProps({
+
  codex/transform-chatwoot-into-synapsea-connect-x6j2jp
 import { computed } from 'vue';
 
@@ -34,6 +39,7 @@ const props = defineProps({
  develop
  develop
  develop
+ develop
   conversation: {
     type: Object,
     default: () => ({}),
@@ -43,6 +49,8 @@ const props = defineProps({
     default: () => ({}),
   },
 });
+ codex/transform-chatwoot-into-synapsea-connect-j4qiji
+
  codex/transform-chatwoot-into-synapsea-connect-x6j2jp
 
 
@@ -53,10 +61,13 @@ const props = defineProps({
 
 
  codex/transform-chatwoot-into-synapsea-connect-zcodwn
+ develop
 </script>
 
 <template>
   <AISuggestions :conversation="conversation" :contact="contact" />
+ codex/transform-chatwoot-into-synapsea-connect-j4qiji
+
 
 
  codex/transform-chatwoot-into-synapsea-connect-2i3fp8
@@ -587,6 +598,7 @@ const resolvedNextBestAction = computed(() => {
 
  codex/transform-chatwoot-into-synapsea-connect-9ntkpr
 
+ develop
  develop
  develop
  develop

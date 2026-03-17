@@ -24,6 +24,9 @@ import SidebarActionsHeader from 'dashboard/components-next/SidebarActionsHeader
 import LinearIssuesList from 'dashboard/components/widgets/conversation/linear/IssuesList.vue';
 import LinearSetupCTA from 'dashboard/components/widgets/conversation/linear/LinearSetupCTA.vue';
 import SynapseaContactIntelligence from 'dashboard/components-next/synapsea/SynapseaContactIntelligence.vue';
+ codex/transform-chatwoot-into-synapsea-connect-j4qiji
+import SynapseaConversationCopilot from 'dashboard/components-next/synapsea/SynapseaConversationCopilot.vue';
+
  codex/transform-chatwoot-into-synapsea-connect-x6j2jp
  codex/transform-chatwoot-into-synapsea-connect-x6j2jp
 import SynapseaConversationCopilot from 'dashboard/components-next/synapsea/SynapseaConversationCopilot.vue';
@@ -61,6 +64,7 @@ import SynapseaConversationCopilot from 'dashboard/components-next/synapsea/Syna
  develop
  codex/transform-chatwoot-into-synapsea-connect-7fgcn5
 
+ develop
  develop
  develop
  develop
@@ -183,6 +187,8 @@ onMounted(() => {
       @close="closeContactPanel"
     />
     <ContactInfo :contact="contact" :channel-type="channelType" />
+ codex/transform-chatwoot-into-synapsea-connect-j4qiji
+
  codex/transform-chatwoot-into-synapsea-connect-3xe9u8
 
  codex/transform-chatwoot-into-synapsea-connect-9ntkpr
@@ -198,6 +204,7 @@ onMounted(() => {
  develop
  develop
  develop
+ develop
     <section class="px-2 py-3 border-b border-n-weak bg-n-surface-1">
       <p
         class="mb-2 text-xs font-semibold tracking-wide uppercase text-n-slate-10"
@@ -209,6 +216,11 @@ onMounted(() => {
           :contact="contact"
           :conversation="currentChat"
         />
+ codex/transform-chatwoot-into-synapsea-connect-j4qiji
+        <SynapseaContactIntelligence :contact="contact" />
+      </div>
+    </section>
+
  codex/transform-chatwoot-into-synapsea-connect-9ntkpr
 
  codex/transform-chatwoot-into-synapsea-connect-zcodwn
@@ -271,6 +283,7 @@ codex/transform-chatwoot-into-synapsea-connect-3xe9u8
  develop
  codex/transform-chatwoot-into-synapsea-connect-7fgcn5
 
+ develop
  develop
  develop
  develop

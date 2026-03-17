@@ -13,9 +13,21 @@ const props = defineProps({
 
 const { t } = useI18n();
 const attrs = computed(() => props.contact?.additional_attributes || {});
+ codex/transform-chatwoot-into-synapsea-connect-j4qiji
+const tags = computed(() => {
+  const businessTags = attrs.value.business_tags;
+  if (Array.isArray(businessTags)) {
+    return businessTags;
+  }
+
+  const labels = props.contact?.labels;
+  return Array.isArray(labels) ? labels : [];
+});
+
 const tags = computed(
   () => attrs.value.business_tags || props.contact?.labels || []
 );
+ develop
 </script>
 
 <template>
