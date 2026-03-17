@@ -1,3 +1,29 @@
+ codex/transform-chatwoot-into-synapsea-connect-3xe9u8
+
+ codex/transform-chatwoot-into-synapsea-connect-7fgcn5
+ codex/transform-chatwoot-into-synapsea-connect-7fgcn5
+
+ codex/transform-chatwoot-into-synapsea-connect-nhivec
+ develop
+
+ codex/transform-chatwoot-into-synapsea-connect-9ntkpr
+
+ codex/transform-chatwoot-into-synapsea-connect-2i3fp8
+
+ codex/transform-chatwoot-into-synapsea-connect-6xbxtt
+
+ codex/transform-chatwoot-into-synapsea-connect-vkjace
+
+ codex/transform-chatwoot-into-synapsea-connect-ymy4px
+
+ codex/transform-chatwoot-into-synapsea-connect-nhivec
+ develop
+ develop
+ develop
+ develop
+ develop
+ develop
+ develop
 import { EventStoreRepository } from '../../events/repositories/eventStore.repository.js';
 import type { OverviewFilters, OverviewReport } from '../types/report.types.js';
 
@@ -68,6 +94,44 @@ export class OverviewReportRepository {
       slaFirstResponseRate,
       slaResolutionRate,
       aiResolutionRate,
+ codex/transform-chatwoot-into-synapsea-connect-3xe9u8
+
+ codex/transform-chatwoot-into-synapsea-connect-7fgcn5
+ codex/transform-chatwoot-into-synapsea-connect-7fgcn5
+
+ codex/transform-chatwoot-into-synapsea-connect-9ntkpr
+
+ codex/transform-chatwoot-into-synapsea-connect-2i3fp8
+
+ codex/transform-chatwoot-into-synapsea-connect-6xbxtt
+
+ codex/transform-chatwoot-into-synapsea-connect-vkjace
+
+ codex/transform-chatwoot-into-synapsea-connect-ymy4px
+ develop
+
+
+import type { OverviewFilters, OverviewReport } from '../types/report.types.js';
+
+export class OverviewReportRepository {
+  async getOverview(_filters: OverviewFilters): Promise<OverviewReport> {
+    return {
+      totalConversations: 0,
+      avgFirstResponseSeconds: 0,
+      avgResolutionSeconds: 0,
+      slaFirstResponseRate: 0,
+      slaResolutionRate: 0,
+      aiResolutionRate: 0,
+ develop
+ develop
+ codex/transform-chatwoot-into-synapsea-connect-7fgcn5
+
+ develop
+ develop
+ develop
+ develop
+ develop
+ develop
     };
   }
 }
