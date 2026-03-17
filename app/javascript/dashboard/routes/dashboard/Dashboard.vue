@@ -95,6 +95,8 @@ export default {
         inbox_view_conversation: 'inbox',
         contacts_dashboard_index: 'contacts',
         contacts_dashboard_active: 'contacts',
+ codex/transform-chatwoot-into-synapsea-connect-3xe9u8
+
  codex/transform-chatwoot-into-synapsea-connect-7fgcn5
  codex/transform-chatwoot-into-synapsea-connect-7fgcn5
         contacts_edit: 'contacts',
@@ -121,6 +123,7 @@ export default {
  develop
  develop
  develop
+ develop
         conversation_mentions: 'conversations',
         labels_list: 'tags',
         automation_list: 'automations',
@@ -129,6 +132,8 @@ export default {
         account_overview_reports: 'reports',
         agent_list: 'user_management',
         search: 'search_filters',
+ codex/transform-chatwoot-into-synapsea-connect-3xe9u8
+
  codex/transform-chatwoot-into-synapsea-connect-7fgcn5
  codex/transform-chatwoot-into-synapsea-connect-7fgcn5
 
@@ -168,10 +173,15 @@ export default {
  develop
  develop
  develop
+ develop
       };
 
       if (routeName?.includes('notes')) return 'internal_notes';
       if (routeName?.includes('assignment')) return 'assign_conversation';
+ codex/transform-chatwoot-into-synapsea-connect-3xe9u8
+
+      return routeToHelpMap[routeName] || null;
+
  codex/transform-chatwoot-into-synapsea-connect-7fgcn5
  codex/transform-chatwoot-into-synapsea-connect-7fgcn5
 
@@ -219,6 +229,7 @@ export default {
  develop
  codex/transform-chatwoot-into-synapsea-connect-7fgcn5
 
+ develop
  develop
  develop
  develop

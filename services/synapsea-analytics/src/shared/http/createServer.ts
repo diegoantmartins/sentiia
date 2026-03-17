@@ -3,6 +3,8 @@ import { registerHealthRoutes } from '../../modules/health/controllers/health.ro
 import { registerEventRoutes } from '../../modules/events/controllers/event.routes.js';
 import { registerReportRoutes } from '../../modules/reports/controllers/report.routes.js';
 import { registerAiReportRoutes } from '../../modules/ai-reports/controllers/aiReport.routes.js';
+ codex/transform-chatwoot-into-synapsea-connect-3xe9u8
+
  codex/transform-chatwoot-into-synapsea-connect-7fgcn5
  codex/transform-chatwoot-into-synapsea-connect-7fgcn5
 
@@ -20,6 +22,7 @@ import { registerAiReportRoutes } from '../../modules/ai-reports/controllers/aiR
  codex/transform-chatwoot-into-synapsea-connect-ymy4px
 
  codex/transform-chatwoot-into-synapsea-connect-nhivec
+ develop
  develop
  develop
  develop
@@ -32,6 +35,8 @@ import { registerSupervisorRoutes } from '../../modules/supervisor/controllers/s
 import { registerSdrRoutes } from '../../modules/sdr/controllers/sdr.routes.js';
 import { registerPlatformRoutes } from '../../modules/platform/controllers/platform.routes.js';
 
+ codex/transform-chatwoot-into-synapsea-connect-3xe9u8
+
  codex/transform-chatwoot-into-synapsea-connect-7fgcn5
  codex/transform-chatwoot-into-synapsea-connect-7fgcn5
 
@@ -51,6 +56,7 @@ import { registerPlatformRoutes } from '../../modules/platform/controllers/platf
  develop
  codex/transform-chatwoot-into-synapsea-connect-7fgcn5
 
+ develop
  develop
  develop
  develop
@@ -63,6 +69,8 @@ export const createServer = () => {
   registerEventRoutes(app);
   registerReportRoutes(app);
   registerAiReportRoutes(app);
+ codex/transform-chatwoot-into-synapsea-connect-3xe9u8
+
  codex/transform-chatwoot-into-synapsea-connect-7fgcn5
  codex/transform-chatwoot-into-synapsea-connect-7fgcn5
 
@@ -80,6 +88,7 @@ export const createServer = () => {
  codex/transform-chatwoot-into-synapsea-connect-ymy4px
 
  codex/transform-chatwoot-into-synapsea-connect-nhivec
+ develop
  develop
  develop
  develop
@@ -92,6 +101,8 @@ export const createServer = () => {
   registerSdrRoutes(app);
   registerPlatformRoutes(app);
 
+ codex/transform-chatwoot-into-synapsea-connect-3xe9u8
+
  codex/transform-chatwoot-into-synapsea-connect-7fgcn5
  codex/transform-chatwoot-into-synapsea-connect-7fgcn5
 
@@ -111,6 +122,7 @@ export const createServer = () => {
  develop
  codex/transform-chatwoot-into-synapsea-connect-7fgcn5
 
+ develop
  develop
  develop
  develop

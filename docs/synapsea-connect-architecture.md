@@ -1,6 +1,9 @@
 # Synapsea Connect — Arquitetura de Plataforma (Mapa do Cérebro)
 
 ## 1) Objetivo desta fase
+ codex/transform-chatwoot-into-synapsea-connect-3xe9u8
+Definir a arquitetura completa para transformar o Connect em **plataforma de operação conversacional com IA e agentes**, com evolução segura sobre o core do Chatwoot.
+
  codex/transform-chatwoot-into-synapsea-connect-9ntkpr
 
 Definir a arquitetura completa para transformar o Connect em **plataforma de operação conversacional com IA e agentes**, com evolução segura sobre o core do Connect.
@@ -32,15 +35,20 @@ Definir a arquitetura completa para transformar o Connect em **plataforma de ope
 
 Definir a arquitetura completa para transformar o Connect em **plataforma de operação conversacional com IA e agentes**, com evolução segura sobre o core do Chatwoot.
  develop
+ develop
 
 ---
 
 ## 2) Estado atual (base já existente)
+ codex/transform-chatwoot-into-synapsea-connect-3xe9u8
+- **Core operacional**: Chatwoot (Rails + Vue + Sidekiq + PostgreSQL + Redis + Vite).
+
  codex/transform-chatwoot-into-synapsea-connect-vkjace
 
 - **Core operacional**: Connect (Rails + Vue + Sidekiq + PostgreSQL + Redis + Vite).
 
 - **Core operacional**: Chatwoot (Rails + Vue + Sidekiq + PostgreSQL + Redis + Vite).
+ develop
  develop
  develop
  develop
@@ -53,6 +61,11 @@ Diretriz: preservar o core para facilitar upgrades; novas capacidades entram com
 ---
 
 ## 3) Princípio arquitetural
+ codex/transform-chatwoot-into-synapsea-connect-3xe9u8
+Adotar arquitetura em camadas:
+
+1. **Conversation Core (Chatwoot/Connect)**
+
 
  codex/transform-chatwoot-into-synapsea-connect-9ntkpr
 Adotar arquitetura em camadas:
@@ -78,6 +91,7 @@ Adotar arquitetura em camadas:
 Adotar arquitetura em camadas:
 
 1. **Conversation Core (Chatwoot/Connect)**
+ develop
  develop
  develop
  develop
@@ -123,6 +137,8 @@ Cada camada deve ser habilitável por feature flag por tenant.
 ## 5) Camada de Inteligência (IA Operacional)
 
 ### 5.1 Fluxo recomendado
+ codex/transform-chatwoot-into-synapsea-connect-3xe9u8
+
  codex/transform-chatwoot-into-synapsea-connect-9ntkpr
 
 
@@ -135,6 +151,7 @@ Cada camada deve ser habilitável por feature flag por tenant.
  codex/transform-chatwoot-into-synapsea-connect-vkjace
 
 
+ develop
  develop
  develop
  develop
@@ -151,6 +168,8 @@ Cada camada deve ser habilitável por feature flag por tenant.
 6. Exibição no painel lateral via API estável.
 
 ### 5.2 Contrato de resposta (exemplo)
+ codex/transform-chatwoot-into-synapsea-connect-3xe9u8
+
  codex/transform-chatwoot-into-synapsea-connect-9ntkpr
 
 
@@ -163,6 +182,7 @@ Cada camada deve ser habilitável por feature flag por tenant.
  codex/transform-chatwoot-into-synapsea-connect-vkjace
 
 
+ develop
  develop
  develop
  develop
@@ -184,6 +204,8 @@ Cada camada deve ser habilitável por feature flag por tenant.
 ```
 
 ### 5.3 RAG mínimo
+ codex/transform-chatwoot-into-synapsea-connect-3xe9u8
+
  codex/transform-chatwoot-into-synapsea-connect-9ntkpr
 
 
@@ -196,6 +218,7 @@ Cada camada deve ser habilitável por feature flag por tenant.
  codex/transform-chatwoot-into-synapsea-connect-vkjace
 
 
+ develop
  develop
  develop
  develop
@@ -209,6 +232,8 @@ Cada camada deve ser habilitável por feature flag por tenant.
 ## 6) Camada CRM Inteligente embutido
 
 ### 6.1 Modelo mínimo por contato
+ codex/transform-chatwoot-into-synapsea-connect-3xe9u8
+
  codex/transform-chatwoot-into-synapsea-connect-9ntkpr
 
 
@@ -221,6 +246,7 @@ Cada camada deve ser habilitável por feature flag por tenant.
  codex/transform-chatwoot-into-synapsea-connect-vkjace
 
 
+ develop
  develop
  develop
  develop
@@ -233,6 +259,8 @@ Cada camada deve ser habilitável por feature flag por tenant.
 - histórico resumido de interação
 
 ### 6.2 Estratégia de dados
+ codex/transform-chatwoot-into-synapsea-connect-3xe9u8
+
  codex/transform-chatwoot-into-synapsea-connect-9ntkpr
 
 
@@ -245,6 +273,7 @@ Cada camada deve ser habilitável por feature flag por tenant.
  codex/transform-chatwoot-into-synapsea-connect-vkjace
 
 
+ develop
  develop
  develop
  develop
@@ -255,6 +284,11 @@ Cada camada deve ser habilitável por feature flag por tenant.
   - migração posterior para tabela dedicada (`contact_business_profiles`) quando houver necessidade de query analítica pesada.
 
 ### 6.3 Contrato de UI
+ codex/transform-chatwoot-into-synapsea-connect-3xe9u8
+`GET /api/v1/accounts/:id/contacts/:id/business_profile`
+
+Resposta:
+
  codex/transform-chatwoot-into-synapsea-connect-9ntkpr
 
  codex/transform-chatwoot-into-synapsea-connect-2i3fp8
@@ -280,6 +314,7 @@ Resposta:
 `GET /api/v1/accounts/:id/contacts/:id/business_profile`
 
 Resposta:
+ develop
  develop
  develop
  develop
@@ -300,6 +335,9 @@ Resposta:
 ## 7) Camada de agentes autônomos
 
 ### 7.1 Agent Runtime
+ codex/transform-chatwoot-into-synapsea-connect-3xe9u8
+Cada agente deve seguir mesmo contrato:
+
  codex/transform-chatwoot-into-synapsea-connect-9ntkpr
 
 Cada agente deve seguir mesmo contrato:
@@ -321,6 +359,7 @@ Cada agente deve seguir mesmo contrato:
 
 
 Cada agente deve seguir mesmo contrato:
+ develop
  develop
  develop
  develop
@@ -331,6 +370,8 @@ Cada agente deve seguir mesmo contrato:
 - `handoff`: transferência para humano quando necessário
 
 ### 7.2 Agentes iniciais
+ codex/transform-chatwoot-into-synapsea-connect-3xe9u8
+
  codex/transform-chatwoot-into-synapsea-connect-9ntkpr
 
 
@@ -343,6 +384,7 @@ Cada agente deve seguir mesmo contrato:
  codex/transform-chatwoot-into-synapsea-connect-vkjace
 
 
+ develop
  develop
  develop
  develop
@@ -353,6 +395,8 @@ Cada agente deve seguir mesmo contrato:
 - Onboarding AI
 
 ### 7.3 Guardrails obrigatórios
+ codex/transform-chatwoot-into-synapsea-connect-3xe9u8
+
  codex/transform-chatwoot-into-synapsea-connect-9ntkpr
 
 
@@ -365,6 +409,7 @@ Cada agente deve seguir mesmo contrato:
  codex/transform-chatwoot-into-synapsea-connect-vkjace
 
 
+ develop
  develop
  develop
  develop
@@ -379,6 +424,8 @@ Cada agente deve seguir mesmo contrato:
 ## 8) Camada de automação (motor de processos)
 
 ### 8.1 Trigger → Condition → Action
+ codex/transform-chatwoot-into-synapsea-connect-3xe9u8
+
  codex/transform-chatwoot-into-synapsea-connect-9ntkpr
 
 
@@ -395,11 +442,15 @@ Cada agente deve seguir mesmo contrato:
  develop
  develop
  develop
+ develop
 - Trigger: evento de mensagem/status/tag
 - Condition: regras por canal, prioridade, intent, score
 - Action: etiqueta, atribuição, webhook, agente, SLA
 
 ### 8.2 Estratégia
+ codex/transform-chatwoot-into-synapsea-connect-3xe9u8
+- Reutilizar engine atual de automação do Chatwoot para MVP.
+
  codex/transform-chatwoot-into-synapsea-connect-9ntkpr
 
 - Reutilizar engine atual de automação do Connect para MVP.
@@ -421,6 +472,7 @@ Cada agente deve seguir mesmo contrato:
  develop
  develop
  develop
+ develop
 - Introduzir novos action types versionados (`ai.summarize`, `agent.assign`, etc.).
 
 ---
@@ -428,6 +480,8 @@ Cada agente deve seguir mesmo contrato:
 ## 9) Camada de analytics operacional
 
 ### 9.1 Métricas essenciais
+ codex/transform-chatwoot-into-synapsea-connect-3xe9u8
+
  codex/transform-chatwoot-into-synapsea-connect-9ntkpr
 
 
@@ -440,6 +494,7 @@ Cada agente deve seguir mesmo contrato:
  codex/transform-chatwoot-into-synapsea-connect-vkjace
 
 
+ develop
  develop
  develop
  develop
@@ -451,6 +506,8 @@ Cada agente deve seguir mesmo contrato:
 - origem dos contatos
 
 ### 9.2 Arquitetura de dados
+ codex/transform-chatwoot-into-synapsea-connect-3xe9u8
+
  codex/transform-chatwoot-into-synapsea-connect-9ntkpr
 
 
@@ -463,6 +520,7 @@ Cada agente deve seguir mesmo contrato:
  codex/transform-chatwoot-into-synapsea-connect-vkjace
 
 
+ develop
  develop
  develop
  develop
@@ -476,6 +534,8 @@ Cada agente deve seguir mesmo contrato:
 ## 10) Painel executivo
 
 Visão para liderança:
+ codex/transform-chatwoot-into-synapsea-connect-3xe9u8
+
  codex/transform-chatwoot-into-synapsea-connect-9ntkpr
 
 
@@ -488,6 +548,7 @@ Visão para liderança:
  codex/transform-chatwoot-into-synapsea-connect-vkjace
 
 
+ develop
  develop
  develop
  develop
@@ -505,6 +566,8 @@ Importante: KPIs com definição formal (dicionário de métricas) para evitar a
 ## 11) Multi-tenant e SaaS readiness
 
 ### 11.1 Isolamento
+ codex/transform-chatwoot-into-synapsea-connect-3xe9u8
+
  codex/transform-chatwoot-into-synapsea-connect-9ntkpr
 
 
@@ -517,6 +580,7 @@ Importante: KPIs com definição formal (dicionário de métricas) para evitar a
  codex/transform-chatwoot-into-synapsea-connect-vkjace
 
 
+ develop
  develop
  develop
  develop
@@ -526,6 +590,9 @@ Importante: KPIs com definição formal (dicionário de métricas) para evitar a
 - criptografia de dados sensíveis em repouso
 
 ### 11.2 Billing/módulos
+ codex/transform-chatwoot-into-synapsea-connect-3xe9u8
+Planos por capacidade:
+
  codex/transform-chatwoot-into-synapsea-connect-9ntkpr
 
 Planos por capacidade:
@@ -547,6 +614,7 @@ Planos por capacidade:
 
 
 Planos por capacidade:
+ develop
  develop
  develop
  develop
@@ -561,6 +629,8 @@ Entitlement por feature flag no backend + gate de UI.
 ---
 
 ## 12) Segurança e governança
+ codex/transform-chatwoot-into-synapsea-connect-3xe9u8
+
  codex/transform-chatwoot-into-synapsea-connect-9ntkpr
 
 
@@ -573,6 +643,7 @@ Entitlement por feature flag no backend + gate de UI.
  codex/transform-chatwoot-into-synapsea-connect-vkjace
 
 
+ develop
  develop
  develop
  develop
@@ -587,6 +658,8 @@ Entitlement por feature flag no backend + gate de UI.
 ## 13) Plano de execução (90 dias)
 
 ### Sprint A (Semanas 1–3)
+ codex/transform-chatwoot-into-synapsea-connect-3xe9u8
+
  codex/transform-chatwoot-into-synapsea-connect-9ntkpr
 
 
@@ -599,6 +672,7 @@ Entitlement por feature flag no backend + gate de UI.
  codex/transform-chatwoot-into-synapsea-connect-vkjace
 
 
+ develop
  develop
  develop
  develop
@@ -608,6 +682,8 @@ Entitlement por feature flag no backend + gate de UI.
 - UI lateral consumindo API real
 
 ### Sprint B (Semanas 4–6)
+ codex/transform-chatwoot-into-synapsea-connect-3xe9u8
+
  codex/transform-chatwoot-into-synapsea-connect-9ntkpr
 
 
@@ -620,6 +696,7 @@ Entitlement por feature flag no backend + gate de UI.
  codex/transform-chatwoot-into-synapsea-connect-vkjace
 
 
+ develop
  develop
  develop
  develop
@@ -629,6 +706,8 @@ Entitlement por feature flag no backend + gate de UI.
 - Dashboard operacional v1
 
 ### Sprint C (Semanas 7–9)
+ codex/transform-chatwoot-into-synapsea-connect-3xe9u8
+
  codex/transform-chatwoot-into-synapsea-connect-9ntkpr
 
 
@@ -641,6 +720,7 @@ Entitlement por feature flag no backend + gate de UI.
  codex/transform-chatwoot-into-synapsea-connect-vkjace
 
 
+ develop
  develop
  develop
  develop
@@ -650,6 +730,8 @@ Entitlement por feature flag no backend + gate de UI.
 - Executive panel v1
 
 ### Sprint D (Semanas 10–12)
+ codex/transform-chatwoot-into-synapsea-connect-3xe9u8
+
  codex/transform-chatwoot-into-synapsea-connect-9ntkpr
 
 
@@ -662,6 +744,7 @@ Entitlement por feature flag no backend + gate de UI.
  codex/transform-chatwoot-into-synapsea-connect-vkjace
 
 
+ develop
  develop
  develop
  develop
@@ -673,6 +756,8 @@ Entitlement por feature flag no backend + gate de UI.
 ---
 
 ## 14) Riscos e mitigação
+ codex/transform-chatwoot-into-synapsea-connect-3xe9u8
+
  codex/transform-chatwoot-into-synapsea-connect-9ntkpr
 
 
@@ -685,6 +770,7 @@ Entitlement por feature flag no backend + gate de UI.
  codex/transform-chatwoot-into-synapsea-connect-vkjace
 
 
+ develop
  develop
  develop
  develop
@@ -697,6 +783,9 @@ Entitlement por feature flag no backend + gate de UI.
 ---
 
 ## 15) Decisão recomendada agora
+ codex/transform-chatwoot-into-synapsea-connect-3xe9u8
+Próxima entrega técnica deve ser um **Architecture Decision Record (ADR) set** com:
+
  codex/transform-chatwoot-into-synapsea-connect-9ntkpr
 
 Próxima entrega técnica deve ser um **Architecture Decision Record (ADR) set** com:
@@ -718,6 +807,7 @@ Próxima entrega técnica deve ser um **Architecture Decision Record (ADR) set**
 
 
 Próxima entrega técnica deve ser um **Architecture Decision Record (ADR) set** com:
+ develop
  develop
  develop
  develop

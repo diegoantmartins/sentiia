@@ -1,6 +1,8 @@
 import { z } from 'zod';
 
 const envSchema = z.object({
+ codex/transform-chatwoot-into-synapsea-connect-3xe9u8
+
  codex/transform-chatwoot-into-synapsea-connect-7fgcn5
  codex/transform-chatwoot-into-synapsea-connect-7fgcn5
 
@@ -24,6 +26,7 @@ const envSchema = z.object({
  develop
  develop
  develop
+ develop
   NODE_ENV: z
     .enum(['development', 'test', 'production'])
     .default('development'),
@@ -31,6 +34,8 @@ const envSchema = z.object({
   // Optional in scaffold mode; required when repositories are connected to Supabase.
   SUPABASE_URL: z.string().url().optional(),
   SUPABASE_SERVICE_ROLE_KEY: z.string().min(1).optional(),
+ codex/transform-chatwoot-into-synapsea-connect-3xe9u8
+
  codex/transform-chatwoot-into-synapsea-connect-7fgcn5
  codex/transform-chatwoot-into-synapsea-connect-7fgcn5
 
@@ -54,6 +59,7 @@ const envSchema = z.object({
  develop
  codex/transform-chatwoot-into-synapsea-connect-7fgcn5
 
+ develop
  develop
  develop
  develop

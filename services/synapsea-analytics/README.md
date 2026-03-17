@@ -7,6 +7,8 @@ Backend Node.js scaffold para o módulo de relatórios estruturados + relatório
 - `src/modules/events`: ingestão de eventos operacionais (`event_store` pipeline)
 - `src/modules/reports`: endpoints fixos de dashboards
 - `src/modules/ai-reports`: camada "pergunte à IA" com guardrails
+ codex/transform-chatwoot-into-synapsea-connect-3xe9u8
+
  codex/transform-chatwoot-into-synapsea-connect-7fgcn5
  codex/transform-chatwoot-into-synapsea-connect-7fgcn5
 
@@ -24,6 +26,7 @@ Backend Node.js scaffold para o módulo de relatórios estruturados + relatório
  codex/transform-chatwoot-into-synapsea-connect-ymy4px
 
  codex/transform-chatwoot-into-synapsea-connect-nhivec
+ develop
  develop
  develop
  develop
@@ -35,6 +38,8 @@ Backend Node.js scaffold para o módulo de relatórios estruturados + relatório
 - `src/modules/supervisor`: torre de controle operacional em tempo real (overview, filas, capacidade, alertas)
 - `src/modules/sdr`: SDR autônomo (importação de leads, prospecção, qualificação e métricas)
 - `src/modules/platform`: blueprint técnico, camadas e catálogo de eventos canônicos
+ codex/transform-chatwoot-into-synapsea-connect-3xe9u8
+
  codex/transform-chatwoot-into-synapsea-connect-7fgcn5
  codex/transform-chatwoot-into-synapsea-connect-7fgcn5
 
@@ -54,6 +59,7 @@ Backend Node.js scaffold para o módulo de relatórios estruturados + relatório
  develop
  codex/transform-chatwoot-into-synapsea-connect-7fgcn5
 
+ develop
  develop
  develop
  develop
@@ -68,6 +74,8 @@ Backend Node.js scaffold para o módulo de relatórios estruturados + relatório
 - `GET /api/reports/overview`
 - `POST /api/reports/ask-ai`
 
+ codex/transform-chatwoot-into-synapsea-connect-3xe9u8
+
  codex/transform-chatwoot-into-synapsea-connect-7fgcn5
  codex/transform-chatwoot-into-synapsea-connect-7fgcn5
 
@@ -85,6 +93,7 @@ Backend Node.js scaffold para o módulo de relatórios estruturados + relatório
  codex/transform-chatwoot-into-synapsea-connect-ymy4px
 
  codex/transform-chatwoot-into-synapsea-connect-nhivec
+ develop
  develop
  develop
  develop
@@ -162,6 +171,8 @@ Backend Node.js scaffold para o módulo de relatórios estruturados + relatório
 3. Pergunte em `/api/reports/ask-ai` para receber resumo + insights + recomendações sobre os dados do período.
 4. Crie ticket em `/api/tickets` e valide distribuição inteligente por skill/capacidade.
 
+ codex/transform-chatwoot-into-synapsea-connect-3xe9u8
+
  codex/transform-chatwoot-into-synapsea-connect-7fgcn5
  codex/transform-chatwoot-into-synapsea-connect-7fgcn5
 
@@ -185,6 +196,7 @@ Backend Node.js scaffold para o módulo de relatórios estruturados + relatório
  develop
  develop
  develop
+ develop
 ## Guardrails já modelados
 
 - Classificação de intenção analítica
@@ -195,6 +207,10 @@ Backend Node.js scaffold para o módulo de relatórios estruturados + relatório
 
 1. Conectar repositórios ao Supabase.
 2. Implementar processor assíncrono de `event_store` para facts/dims.
+ codex/transform-chatwoot-into-synapsea-connect-3xe9u8
+3. Adicionar regras avançadas de SLA e transbordo de fila no módulo de routing.
+4. Substituir resposta heurística do `GenerateAnswerService` por orquestração LLM + dados reais.
+
  codex/transform-chatwoot-into-synapsea-connect-7fgcn5
  codex/transform-chatwoot-into-synapsea-connect-7fgcn5
 
@@ -229,6 +245,7 @@ Backend Node.js scaffold para o módulo de relatórios estruturados + relatório
  develop
  codex/transform-chatwoot-into-synapsea-connect-7fgcn5
 
+ develop
  develop
  develop
  develop

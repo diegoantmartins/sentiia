@@ -1,5 +1,7 @@
 <script setup>
 import { computed, onMounted } from 'vue';
+ codex/transform-chatwoot-into-synapsea-connect-3xe9u8
+
  codex/transform-chatwoot-into-synapsea-connect-9ntkpr
 
  codex/transform-chatwoot-into-synapsea-connect-2i3fp8
@@ -133,6 +135,7 @@ const topChannels = computed(() => {
  codex/transform-chatwoot-into-synapsea-connect-6xbxtt
 
 
+ develop
 import { useMapGetter, useStore } from 'dashboard/composables/store';
 import { formatTime } from '@chatwoot/utils';
 
@@ -161,6 +164,9 @@ const topAgentPerformance = computed(() => {
 
 const topContactOrigin = computed(() => {
   const channelCount = (inboxes.value || []).reduce((acc, inbox) => {
+ codex/transform-chatwoot-into-synapsea-connect-3xe9u8
+
+ develop
  develop
  develop
  develop
@@ -169,6 +175,8 @@ const topContactOrigin = computed(() => {
     acc[key] = (acc[key] || 0) + 1;
     return acc;
   }, {});
+
+ codex/transform-chatwoot-into-synapsea-connect-3xe9u8
 
  codex/transform-chatwoot-into-synapsea-connect-9ntkpr
 
@@ -370,6 +378,7 @@ onMounted(() => {
  codex/transform-chatwoot-into-synapsea-connect-6xbxtt
 
 
+ develop
   const [topChannel] = Object.entries(channelCount).sort(
     ([, a], [, b]) => b - a
   );
@@ -380,6 +389,9 @@ onMounted(() => {
 
 onMounted(() => {
   store.dispatch('fetchAgentConversationMetric');
+ codex/transform-chatwoot-into-synapsea-connect-3xe9u8
+
+ develop
  develop
  develop
  develop
@@ -389,6 +401,8 @@ onMounted(() => {
 </script>
 
 <template>
+ codex/transform-chatwoot-into-synapsea-connect-3xe9u8
+
  codex/transform-chatwoot-into-synapsea-connect-9ntkpr
 
  codex/transform-chatwoot-into-synapsea-connect-2i3fp8
@@ -831,6 +845,7 @@ onMounted(() => {
  codex/transform-chatwoot-into-synapsea-connect-6xbxtt
 
 
+ develop
   <section class="mt-4 rounded-xl border border-n-weak bg-n-solid-2 p-4">
     <header class="mb-3">
       <h3 class="m-0 text-sm font-medium text-n-slate-12">
@@ -874,6 +889,9 @@ onMounted(() => {
         </p>
       </article>
     </div>
+ codex/transform-chatwoot-into-synapsea-connect-3xe9u8
+
+ develop
  develop
  develop
  develop

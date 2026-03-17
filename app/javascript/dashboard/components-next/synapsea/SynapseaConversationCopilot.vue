@@ -1,4 +1,9 @@
 <script setup>
+ codex/transform-chatwoot-into-synapsea-connect-3xe9u8
+import { computed } from 'vue';
+
+const props = defineProps({
+
  codex/transform-chatwoot-into-synapsea-connect-9ntkpr
 import { computed } from 'vue';
 
@@ -22,6 +27,7 @@ import { useI18n } from 'vue-i18n';
 const props = defineProps({
  develop
  develop
+ develop
   conversation: {
     type: Object,
     default: () => ({}),
@@ -31,6 +37,9 @@ const props = defineProps({
     default: () => ({}),
   },
 });
+ codex/transform-chatwoot-into-synapsea-connect-3xe9u8
+
+
  codex/transform-chatwoot-into-synapsea-connect-9ntkpr
 
 
@@ -49,6 +58,7 @@ const { t } = useI18n();
 const { t } = useI18n();
 
 
+ develop
  develop
  develop
  develop
@@ -128,6 +138,14 @@ const isSalesMode = computed(() => {
 });
 
 const isSupportMode = computed(() => !isSalesMode.value);
+ codex/transform-chatwoot-into-synapsea-connect-3xe9u8
+</script>
+
+<template>
+  <div
+    class="mx-2 mb-3 p-3 rounded-xl border border-n-slate-6 bg-n-background shadow-sm"
+  >
+
  codex/transform-chatwoot-into-synapsea-connect-9ntkpr
 </script>
 
@@ -224,11 +242,15 @@ const resolvedNextBestAction = computed(() => {
  develop
  develop
  develop
+ develop
     <div class="flex items-center justify-between gap-2 mb-3">
       <h3 class="text-sm font-semibold text-n-slate-12">
         {{ $t('CONVERSATION_SIDEBAR.INTELLIGENT_PANEL.TITLE') }}
       </h3>
       <span
+ codex/transform-chatwoot-into-synapsea-connect-3xe9u8
+        class="text-xs font-medium px-2 py-1 rounded-full bg-n-blue-3 text-n-blue-11"
+
  codex/transform-chatwoot-into-synapsea-connect-9ntkpr
         class="text-xs font-medium px-2 py-1 rounded-full bg-n-alpha-2 text-n-slate-11"
 
@@ -242,6 +264,7 @@ const resolvedNextBestAction = computed(() => {
         class="text-xs font-medium px-2 py-1 rounded-full bg-n-alpha-2 text-n-slate-11"
 
         class="text-xs font-medium px-2 py-1 rounded-full bg-n-blue-3 text-n-blue-11"
+ develop
  develop
  develop
  develop
@@ -262,6 +285,9 @@ const resolvedNextBestAction = computed(() => {
         <p class="text-n-slate-10">
           {{ $t('CONVERSATION_SIDEBAR.INTELLIGENT_PANEL.LEAD_SCORE') }}
         </p>
+ codex/transform-chatwoot-into-synapsea-connect-3xe9u8
+        <p class="font-semibold text-n-slate-12">{{ leadScore }}%</p>
+
  codex/transform-chatwoot-into-synapsea-connect-9ntkpr
         <p class="font-semibold text-n-slate-12">{{ leadScore }}%</p>
 
@@ -285,6 +311,7 @@ const resolvedNextBestAction = computed(() => {
 
 
         <p class="font-semibold text-n-slate-12">{{ leadScore }}%</p>
+ develop
  develop
  develop
  develop
@@ -325,6 +352,11 @@ const resolvedNextBestAction = computed(() => {
           {{ $t('CONVERSATION_SIDEBAR.INTELLIGENT_PANEL.NEXT_ACTION') }}
         </p>
         <p class="text-n-slate-10">
+ codex/transform-chatwoot-into-synapsea-connect-3xe9u8
+          {{
+            nextBestAction.includes('.') ? $t(nextBestAction) : nextBestAction
+          }}
+
  codex/transform-chatwoot-into-synapsea-connect-9ntkpr
           {{
             nextBestAction.includes('.') ? $t(nextBestAction) : nextBestAction
@@ -339,6 +371,7 @@ const resolvedNextBestAction = computed(() => {
           {{
             nextBestAction.includes('.') ? $t(nextBestAction) : nextBestAction
           }}
+ develop
  develop
  develop
  develop
@@ -351,6 +384,9 @@ const resolvedNextBestAction = computed(() => {
         </p>
         <ul class="space-y-1 text-n-slate-10 list-disc pl-4">
           <li v-for="action in suggestedActions" :key="action">
+ codex/transform-chatwoot-into-synapsea-connect-3xe9u8
+            {{ action.includes('.') ? $t(action) : action }}
+
  codex/transform-chatwoot-into-synapsea-connect-9ntkpr
             {{ action.includes('.') ? $t(action) : action }}
 
@@ -361,6 +397,7 @@ const resolvedNextBestAction = computed(() => {
             {{ resolveSuggestedAction(action) }}
 
             {{ action.includes('.') ? $t(action) : action }}
+ develop
  develop
  develop
  develop
@@ -374,6 +411,9 @@ const resolvedNextBestAction = computed(() => {
         </p>
         <ul class="space-y-1 text-n-slate-10 list-disc pl-4">
           <li v-for="item in knowledgeArticles" :key="item">
+ codex/transform-chatwoot-into-synapsea-connect-3xe9u8
+            {{ item.includes('.') ? $t(item) : item }}
+
  codex/transform-chatwoot-into-synapsea-connect-9ntkpr
             {{ item.includes('.') ? $t(item) : item }}
 
@@ -386,12 +426,15 @@ const resolvedNextBestAction = computed(() => {
  develop
  develop
  develop
+ develop
           </li>
         </ul>
       </section>
 
       <section
         v-if="isSalesMode"
+ codex/transform-chatwoot-into-synapsea-connect-3xe9u8
+
  codex/transform-chatwoot-into-synapsea-connect-9ntkpr
 
  codex/transform-chatwoot-into-synapsea-connect-2i3fp8
@@ -423,6 +466,7 @@ const resolvedNextBestAction = computed(() => {
  codex/transform-chatwoot-into-synapsea-connect-6xbxtt
 
 
+ develop
         class="rounded-lg border border-n-green-5 p-2"
       >
         <p class="text-n-green-11 font-medium mb-1">
@@ -431,6 +475,9 @@ const resolvedNextBestAction = computed(() => {
         <p class="text-n-slate-11">
           {{ $t('CONVERSATION_SIDEBAR.INTELLIGENT_PANEL.CLOSE_PROBABILITY') }}:
           <span class="font-semibold">{{ probabilityToClose }}%</span>
+ codex/transform-chatwoot-into-synapsea-connect-3xe9u8
+
+ develop
  develop
  develop
  develop
@@ -440,6 +487,11 @@ const resolvedNextBestAction = computed(() => {
 
       <section
         v-if="isSupportMode"
+ codex/transform-chatwoot-into-synapsea-connect-3xe9u8
+        class="rounded-lg border border-n-violet-5 p-2"
+      >
+        <p class="text-n-violet-11 font-medium mb-1">
+
  codex/transform-chatwoot-into-synapsea-connect-9ntkpr
         class="rounded-lg border border-n-weak bg-n-slate-2 p-2"
       >
@@ -467,6 +519,7 @@ const resolvedNextBestAction = computed(() => {
  develop
  develop
  develop
+ develop
           {{ $t('CONVERSATION_SIDEBAR.INTELLIGENT_PANEL.SUPPORT_MODE') }}
         </p>
         <p class="text-n-slate-11">
@@ -475,8 +528,11 @@ const resolvedNextBestAction = computed(() => {
       </section>
     </div>
   </div>
+ codex/transform-chatwoot-into-synapsea-connect-3xe9u8
+
  codex/transform-chatwoot-into-synapsea-connect-9ntkpr
 
+ develop
  develop
  develop
 </template>
