@@ -1,3 +1,9 @@
+ codex/transform-chatwoot-into-synapsea-connect-7fgcn5
+ codex/transform-chatwoot-into-synapsea-connect-7fgcn5
+
+ codex/transform-chatwoot-into-synapsea-connect-nhivec
+ develop
+
  codex/transform-chatwoot-into-synapsea-connect-9ntkpr
 
  codex/transform-chatwoot-into-synapsea-connect-2i3fp8
@@ -9,6 +15,7 @@
  codex/transform-chatwoot-into-synapsea-connect-ymy4px
 
  codex/transform-chatwoot-into-synapsea-connect-nhivec
+ develop
  develop
  develop
  develop
@@ -84,6 +91,9 @@ export class OverviewReportRepository {
       slaFirstResponseRate,
       slaResolutionRate,
       aiResolutionRate,
+ codex/transform-chatwoot-into-synapsea-connect-7fgcn5
+ codex/transform-chatwoot-into-synapsea-connect-7fgcn5
+
  codex/transform-chatwoot-into-synapsea-connect-9ntkpr
 
  codex/transform-chatwoot-into-synapsea-connect-2i3fp8
@@ -93,6 +103,7 @@ export class OverviewReportRepository {
  codex/transform-chatwoot-into-synapsea-connect-vkjace
 
  codex/transform-chatwoot-into-synapsea-connect-ymy4px
+ develop
 
 
 import type { OverviewFilters, OverviewReport } from '../types/report.types.js';
@@ -107,6 +118,9 @@ export class OverviewReportRepository {
       slaResolutionRate: 0,
       aiResolutionRate: 0,
  develop
+ develop
+ codex/transform-chatwoot-into-synapsea-connect-7fgcn5
+
  develop
  develop
  develop

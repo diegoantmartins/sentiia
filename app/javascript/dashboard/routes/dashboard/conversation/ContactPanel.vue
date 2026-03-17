@@ -24,6 +24,9 @@ import SidebarActionsHeader from 'dashboard/components-next/SidebarActionsHeader
 import LinearIssuesList from 'dashboard/components/widgets/conversation/linear/IssuesList.vue';
 import LinearSetupCTA from 'dashboard/components/widgets/conversation/linear/LinearSetupCTA.vue';
 import SynapseaContactIntelligence from 'dashboard/components-next/synapsea/SynapseaContactIntelligence.vue';
+ codex/transform-chatwoot-into-synapsea-connect-7fgcn5
+ codex/transform-chatwoot-into-synapsea-connect-7fgcn5
+
  codex/transform-chatwoot-into-synapsea-connect-9ntkpr
 import SynapseaConversationCopilot from 'dashboard/components-next/synapsea/SynapseaConversationCopilot.vue';
 
@@ -40,12 +43,16 @@ import SynapseaConversationCopilot from 'dashboard/components-next/synapsea/Syna
 import SynapseaConversationCopilot from 'dashboard/components-next/synapsea/SynapseaConversationCopilot.vue';
 
  codex/transform-chatwoot-into-synapsea-connect-ymy4px
+ develop
 import SynapseaConversationCopilot from 'dashboard/components-next/synapsea/SynapseaConversationCopilot.vue';
 
  codex/transform-chatwoot-into-synapsea-connect-nhivec
 import SynapseaConversationCopilot from 'dashboard/components-next/synapsea/SynapseaConversationCopilot.vue';
 
  develop
+ develop
+ codex/transform-chatwoot-into-synapsea-connect-7fgcn5
+
  develop
  develop
  develop
@@ -215,7 +222,11 @@ onMounted(() => {
       :contact="contact"
       :conversation="currentChat"
     />
+ codex/transform-chatwoot-into-synapsea-connect-7fgcn5
+ codex/transform-chatwoot-into-synapsea-connect-7fgcn5
+
  codex/transform-chatwoot-into-synapsea-connect-ymy4px
+ develop
 
  codex/transform-chatwoot-into-synapsea-connect-nhivec
  develop
@@ -223,10 +234,17 @@ onMounted(() => {
       :contact="contact"
       :conversation="currentChat"
     />
+ codex/transform-chatwoot-into-synapsea-connect-7fgcn5
+ codex/transform-chatwoot-into-synapsea-connect-7fgcn5
+
  codex/transform-chatwoot-into-synapsea-connect-ymy4px
+ develop
 
 
  develop
+ develop
+ codex/transform-chatwoot-into-synapsea-connect-7fgcn5
+
  develop
  develop
  develop

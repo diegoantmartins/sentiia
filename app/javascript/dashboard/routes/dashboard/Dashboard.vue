@@ -95,6 +95,11 @@ export default {
         inbox_view_conversation: 'inbox',
         contacts_dashboard_index: 'contacts',
         contacts_dashboard_active: 'contacts',
+ codex/transform-chatwoot-into-synapsea-connect-7fgcn5
+ codex/transform-chatwoot-into-synapsea-connect-7fgcn5
+        contacts_edit: 'contacts',
+
+
  codex/transform-chatwoot-into-synapsea-connect-9ntkpr
         contacts_edit: 'contacts',
 
@@ -110,6 +115,7 @@ export default {
  codex/transform-chatwoot-into-synapsea-connect-ymy4px
         contacts_edit: 'contacts',
 
+ develop
  develop
  develop
  develop
@@ -123,6 +129,9 @@ export default {
         account_overview_reports: 'reports',
         agent_list: 'user_management',
         search: 'search_filters',
+ codex/transform-chatwoot-into-synapsea-connect-7fgcn5
+ codex/transform-chatwoot-into-synapsea-connect-7fgcn5
+
  codex/transform-chatwoot-into-synapsea-connect-9ntkpr
 
  codex/transform-chatwoot-into-synapsea-connect-2i3fp8
@@ -136,10 +145,14 @@ export default {
  develop
  develop
  develop
+ develop
         companies_dashboard_index: 'companies',
         campaigns_livechat_index: 'campaigns',
         campaigns_sms_index: 'campaigns',
         campaigns_whatsapp_index: 'campaigns',
+ codex/transform-chatwoot-into-synapsea-connect-7fgcn5
+
+
  codex/transform-chatwoot-into-synapsea-connect-9ntkpr
 
  codex/transform-chatwoot-into-synapsea-connect-2i3fp8
@@ -149,6 +162,7 @@ export default {
  codex/transform-chatwoot-into-synapsea-connect-vkjace
 
 
+ develop
  develop
  develop
  develop
@@ -158,6 +172,9 @@ export default {
 
       if (routeName?.includes('notes')) return 'internal_notes';
       if (routeName?.includes('assignment')) return 'assign_conversation';
+ codex/transform-chatwoot-into-synapsea-connect-7fgcn5
+ codex/transform-chatwoot-into-synapsea-connect-7fgcn5
+
  codex/transform-chatwoot-into-synapsea-connect-9ntkpr
 
  codex/transform-chatwoot-into-synapsea-connect-2i3fp8
@@ -167,6 +184,7 @@ export default {
  codex/transform-chatwoot-into-synapsea-connect-vkjace
 
  codex/transform-chatwoot-into-synapsea-connect-ymy4px
+ develop
  develop
  develop
  develop
@@ -184,6 +202,8 @@ export default {
       if (routeName?.includes('conversation')) return 'conversations';
 
       return routeToHelpMap[routeName] || 'dashboard';
+ codex/transform-chatwoot-into-synapsea-connect-7fgcn5
+
  codex/transform-chatwoot-into-synapsea-connect-9ntkpr
 
  codex/transform-chatwoot-into-synapsea-connect-2i3fp8
@@ -192,9 +212,13 @@ export default {
 
  codex/transform-chatwoot-into-synapsea-connect-vkjace
 
+ develop
 
 
       return routeToHelpMap[routeName] || null;
+ develop
+ codex/transform-chatwoot-into-synapsea-connect-7fgcn5
+
  develop
  develop
  develop
