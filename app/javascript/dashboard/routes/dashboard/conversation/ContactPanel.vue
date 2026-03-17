@@ -24,6 +24,11 @@ import SidebarActionsHeader from 'dashboard/components-next/SidebarActionsHeader
 import LinearIssuesList from 'dashboard/components/widgets/conversation/linear/IssuesList.vue';
 import LinearSetupCTA from 'dashboard/components/widgets/conversation/linear/LinearSetupCTA.vue';
 import SynapseaContactIntelligence from 'dashboard/components-next/synapsea/SynapseaContactIntelligence.vue';
+ codex/transform-chatwoot-into-synapsea-connect-x6j2jp
+ codex/transform-chatwoot-into-synapsea-connect-x6j2jp
+import SynapseaConversationCopilot from 'dashboard/components-next/synapsea/SynapseaConversationCopilot.vue';
+
+
  codex/transform-chatwoot-into-synapsea-connect-3xe9u8
 import SynapseaConversationCopilot from 'dashboard/components-next/synapsea/SynapseaConversationCopilot.vue';
 
@@ -56,6 +61,7 @@ import SynapseaConversationCopilot from 'dashboard/components-next/synapsea/Syna
  develop
  codex/transform-chatwoot-into-synapsea-connect-7fgcn5
 
+ develop
  develop
  develop
  develop
@@ -229,6 +235,9 @@ onMounted(() => {
       :contact="contact"
       :conversation="currentChat"
     />
+ codex/transform-chatwoot-into-synapsea-connect-x6j2jp
+codex/transform-chatwoot-into-synapsea-connect-x6j2jp
+
 
 codex/transform-chatwoot-into-synapsea-connect-3xe9u8
 
@@ -241,10 +250,14 @@ codex/transform-chatwoot-into-synapsea-connect-3xe9u8
  codex/transform-chatwoot-into-synapsea-connect-nhivec
  develop
  develop
+ develop
     <SynapseaConversationCopilot
       :contact="contact"
       :conversation="currentChat"
     />
+ codex/transform-chatwoot-into-synapsea-connect-x6j2jp
+
+
  codex/transform-chatwoot-into-synapsea-connect-3xe9u8
 
  codex/transform-chatwoot-into-synapsea-connect-7fgcn5
@@ -258,6 +271,7 @@ codex/transform-chatwoot-into-synapsea-connect-3xe9u8
  develop
  codex/transform-chatwoot-into-synapsea-connect-7fgcn5
 
+ develop
  develop
  develop
  develop
